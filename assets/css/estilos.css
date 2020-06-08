@@ -1,0 +1,170 @@
+.borde {border: 1px solid red}
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     color: black;
+     background: var(--gris_menuus);
+     font-size: 16px;
+     height: 100%;
+}
+
+:root {
+     --dedalo: #D2C29D;
+     --morado: #3F00FF;
+     --gris_menuus: #E8E8E8;
+     --gris: rgb(7, 6, 6);
+     --gris_claro: #c3c3c3;
+     --negro50: rgba(0,0,0,0.5);
+     --negro60: rgba(0,0,0,0.6);
+     --negro70: rgba(0,0,0,0.7);
+     --blanco50: rgba(255,255,255,0.5);
+     --blanco60: rgba(255,255,255,0.6);
+     --blanco70: rgba(255,255,255,0.7);
+     --blanco80: rgba(255,255,255,0.8);
+     --blanco90: rgba(255,255,255,0.9);
+     --trans: all 0.2s ease-in-out;
+}
+
+::selection {
+     background: var(--dedalo);
+     color: black;
+}
+::-moz-selection {
+     background: var(--dedalo);
+     color: black;
+}
+
+.ocultar {display: none;}
+
+ul {
+     list-style: none;
+}
+
+button, input, select, textarea {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0;
+}
+/* -------------------------------IDS */
+h1 {
+    font-family: Raleway-Bold;
+    font-size: 66px;
+    color: #000000;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 65px;
+}
+h1 span {
+    font-family: Montserrat-Medium;
+    font-size: 23px;
+    font-weight: 300;
+    color: #272727;
+    letter-spacing: 0.7px;
+    line-height: 34px;
+}
+span {
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    color: var(--morado);
+    letter-spacing: 0.38px;
+}
+
+/* ----- FONDOS - BKGR */
+.bkgr-qrs {
+    position: absolute;
+    top: -40px;
+    background: url('../images/bkgr-qrs@2x.jpg')top center;
+    background-repeat: no-repeat;
+    background-size: 115% auto;
+    width: 100%;
+    height: 2500px;
+    z-index: -1;
+}
+.bkgr-triangulos {
+    position: absolute;
+    top: 35px;
+    background: url('../images/bkgr-triangulos.svg')top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 2500px;
+    z-index: -1;
+}
+
+/* ----- BOTONES */
+.boton-primario {
+    padding: 18px 32px;
+    border: 0;
+    border-radius: 6px;
+}
+.boton-primario, .boton-planes {
+    background-color: var(--morado);
+    color: white;
+    text-decoration: none;
+}
+.boton-primario:hover, .boton-planes:hover {
+    background-color: white;
+    color: var(--morado);
+    transition: var(--trans);
+    box-shadow: 0 16px 22px -7px rgba(0,0,0,0.2);
+}
+
+/* ----- ENCABEZADO */
+#encabezado {
+    height: 80vh;
+}
+.logo, nav {
+    position: fixed;
+    background: var(--blanco90);
+}
+.logo {
+    width: 180px;
+    left: 0;
+    padding: 24px;
+}
+nav {right: 0;}
+    nav ul li {
+        display: inline-block;
+        padding: 26px 0;
+    }
+    nav ul li a {
+        font-family: ABeeZee-Regular;
+        font-size: 15px;
+        letter-spacing: 0.9px;
+        text-decoration: none;
+        padding: 26px 22px;
+        transition: var(--trans);
+    }
+    ul li a:hover {
+        color: var(--morado);
+        box-shadow: 0 16px 22px -7px rgba(0,0,0,0.2);
+    }
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    height: 80vh;
+}
+/* ----- CONFIANZA */
+#confianza {
+    height: 80vh;
+}
+/* ----- CAMBIOS ILIMITADOS */
+#cambios-ilimitados {
+    height: 80vh;
+    background-color: blue;
+}
+/* ----- COMO FUNCIONA */
+#como-funciona {
+    height: 50vh;
+    background: lightgray;
+}
+#beneficios {
+    height: 80vh;
+    background-color: yellowgreen;
+}
