@@ -53,25 +53,23 @@ button, input, select, textarea {
 /* -------------------------------IDS */
 h1 {
     font-family: Raleway-Bold;
-    font-size: 66px;
+    font-size: 3em;
     color: #000000;
     letter-spacing: 2px;
-    text-align: center;
-    line-height: 65px;
+    line-height: 1em;
 }
 h1 span {
     font-family: Montserrat-Medium;
-    font-size: 23px;
+    font-size: 0.4em;
     font-weight: 300;
     color: #272727;
-    letter-spacing: 0.7px;
-    line-height: 34px;
+    letter-spacing: 0.5px;
+    line-height: 1px;
 }
 span {
     font-family: Montserrat-Regular;
     font-size: 20px;
     color: var(--morado);
-    letter-spacing: 0.38px;
 }
 
 /* ----- FONDOS - BKGR */
@@ -101,6 +99,7 @@ span {
     padding: 18px 32px;
     border: 0;
     border-radius: 6px;
+    cursor: pointer;
 }
 .boton-primario, .boton-planes {
     background-color: var(--morado);
@@ -146,9 +145,29 @@ nav {right: 0;}
     }
 #hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 55% 45%;
     align-content: center;
     height: 80vh;
+}
+.span-morado {
+    color: var(--morado);
+    font-size: 1em;
+    display: block;
+    padding: 15px 0 30px 0;
+}
+#hero .textos {padding-left: 17%;}
+#hero .imagenes {position: relative;}
+#hero .celular, #hero .qr {position: absolute;}
+#hero .imagenes .celular {
+    max-width: 500px;
+    left:-70px;
+    top: -40px;
+}
+#hero .imagenes .qr {
+    max-width: 150px;
+    bottom: -40px;
+    left: 300px;
+    
 }
 /* ----- CONFIANZA */
 #confianza {
