@@ -1,4 +1,4 @@
-.borde {border: 1px solid red}
+.borde {border: 1px solid blue;}
 * {
      margin: 0;
      padding: 0;
@@ -7,7 +7,6 @@
 
 body {
      color: black;
-     background: var(--gris_menuus);
      font-size: 16px;
      height: 100%;
 }
@@ -15,7 +14,7 @@ body {
 :root {
      --dedalo: #D2C29D;
      --morado: #3F00FF;
-     --gris_menuus: #E8E8E8;
+     --gris_menuus: #EBEBEB;
      --gris: rgb(7, 6, 6);
      --gris_claro: #c3c3c3;
      --negro50: rgba(0,0,0,0.5);
@@ -56,20 +55,37 @@ h1 {
     font-size: 3em;
     color: #000000;
     letter-spacing: 2px;
-    line-height: 1em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
 }
-h1 span {
-    font-family: Montserrat-Medium;
-    font-size: 0.4em;
-    font-weight: 300;
-    color: #272727;
-    letter-spacing: 0.5px;
-    line-height: 1px;
+    h1 span {
+        font-family: Montserrat-Medium;
+        font-size: 0.4em;
+        font-weight: 300;
+        color: #272727;
+        letter-spacing: 0.5px;
+        line-height: 1px;
+    }
+h2 {font-size: 2.7em;
+    margin-bottom:22px;
 }
-span {
-    font-family: Montserrat-Regular;
-    font-size: 20px;
-    color: var(--morado);
+
+h2, span, h3 {
+    font-family: Raleway;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    line-height: 1.1em;
+}
+span, h3 {
+    font-size: 1.3em;
+    padding-bottom: 5px;
+    display: block;
+}
+p {
+    font-family: ABeeZee-Regular;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    letter-spacing: 0.2px;
 }
 
 /* ----- FONDOS - BKGR */
@@ -80,7 +96,7 @@ span {
     background-repeat: no-repeat;
     background-size: 115% auto;
     width: 100%;
-    height: 2500px;
+    height: 2550px;
     z-index: -1;
 }
 .bkgr-triangulos {
@@ -96,31 +112,39 @@ span {
 
 /* ----- BOTONES */
 .boton-primario {
-    padding: 18px 32px;
+    cursor: pointer;
     border: 0;
     border-radius: 6px;
-    cursor: pointer;
+    font-family: ABeeZee-Regular;
+    font-size: 0.9em;
+    margin: 0 auto;
+    padding: 18px 32px;
+    letter-spacing: 1px;
 }
 .boton-primario, .boton-planes {
     background-color: var(--morado);
+    background: radial-gradient(circle, rgba(63,0,255,1) 0%, rgba(63,0,255,1) 100%);
     color: white;
     text-decoration: none;
+    transition: var(--trans);
 }
 .boton-primario:hover, .boton-planes:hover {
-    background-color: white;
-    color: var(--morado);
+    color: white;
+    background: var(--morado);
+    background: radial-gradient(circle, rgba(0,90,255,1) 0%, rgba(63,0,255,1) 100%);
     transition: var(--trans);
-    box-shadow: 0 16px 22px -7px rgba(0,0,0,0.2);
+    box-shadow: 0 16px 22px -7px rgba(0,0,0,0.25);
 }
 
 /* ----- ENCABEZADO */
 #encabezado {
-    height: 80vh;
+    height: 90vh;
 }
 .logo, nav {
     position: fixed;
     background: var(--blanco90);
 }
+.logo, nav {z-index: 9999;}
 .logo {
     width: 180px;
     left: 0;
@@ -144,16 +168,21 @@ nav {right: 0;}
         box-shadow: 0 16px 22px -7px rgba(0,0,0,0.2);
     }
 #hero {
+    height: 90vh;
     display: grid;
-    grid-template-columns: 55% 45%;
     align-content: center;
-    height: 80vh;
+    grid-template-columns: 55% 45%;
 }
-.span-morado {
+#hero .span-morado {
+    font-family: Montserrat-Regular;
     color: var(--morado);
     font-size: 1em;
     display: block;
     padding: 15px 0 30px 0;
+}
+#hero .span-morado::before {
+    content: "─ ";
+    color: var(--morado);
 }
 #hero .textos {padding-left: 17%;}
 #hero .imagenes {position: relative;}
@@ -161,7 +190,7 @@ nav {right: 0;}
 #hero .imagenes .celular {
     max-width: 500px;
     left:-70px;
-    top: -40px;
+    top: -35px;
 }
 #hero .imagenes .qr {
     max-width: 150px;
@@ -171,19 +200,119 @@ nav {right: 0;}
 }
 /* ----- CONFIANZA */
 #confianza {
-    height: 80vh;
+    color: white;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-content: center;
 }
+#confianza .triangulos {position: relative;height: 50vh;}
+#confianza .triangulo-1, #confianza .triangulo-2 {position: absolute;}
+#confianza .triangulo-1 {
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+    top: -60%;
+    left: -2px;
+}
+#confianza .triangulo-2 {
+    width: 100%;
+    max-width: 300px;
+    min-width: 100px;
+    top: 50%;
+    left: 35%;
+}
+#confianza .textos {
+    display: grid;
+    flex-flow: column;
+    align-content: center;
+    text-align: left;
+    padding: 0 18% 0 15%;
+    margin-top: -20px;
+}
+#confianza .icono-covid {width: 60px;margin-bottom: 20px;}
+
 /* ----- CAMBIOS ILIMITADOS */
 #cambios-ilimitados {
-    height: 80vh;
-    background-color: blue;
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    align-content: center;
 }
+#cambios-ilimitados .icono-infinito {
+    margin-right: 0;
+    margin-left: auto;
+}
+#cambios-ilimitados .textos {
+    text-align: right;
+    padding: 10% 24% 0 16%;
+}
+#cambios-ilimitados .triangulo-3 {
+    width: 30%;
+    max-width: 450px;
+    min-width: 200px;
+    position: absolute;
+    top: 50px;
+    right: -2px;
+}
+
 /* ----- COMO FUNCIONA */
-#como-funciona {
-    height: 50vh;
-    background: lightgray;
+#como-funciona, #como-funciona .items {
+    display: grid;
+    justify-content: center;
 }
+#como-funciona {
+    padding: 0 8%;
+    margin: 0;
+    color: white;
+    align-content: center;
+    text-align: center;
+    height: 60vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.4)100%), url('../images/photo-restaurant-jakub-kapusnak-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#como-funciona .items {
+    grid-template-columns: repeat(3, minmax(250px, 400px));
+    grid-gap: 50px;
+    margin-bottom: 35px;
+}
+#como-funciona h3 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* ----- BENEFICIOS */
 #beneficios {
-    height: 80vh;
-    background-color: yellowgreen;
+    background: url('../images/bkgr-beneficios@2x.jpg')no-repeat top center;
+    background-size: cover;
+    padding: 7% 0;
+    height: 95vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template: repeat(2, 25% 25%) / repeat(3, minmax(100px, 300px));
+    gap: 170px 10%;
+    text-align: center;
+}
+#beneficios .circulos {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    
+}
+#beneficios .circulo-rojo, #beneficios .isotipo {
+    position: absolute;
+}
+#beneficios .circulo-rojo {width: 100%;}
+#beneficios .isotipo {width: 35%;}
+
+/* ----- FOOTER */
+footer {
+    background-color: var(--gris_menuus);
+    display: grid;
+    justify-content: space-between;
 }
