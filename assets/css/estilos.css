@@ -17,6 +17,8 @@ body {
      --gris_menuus: #EBEBEB;
      --gris: rgb(7, 6, 6);
      --gris_claro: #c3c3c3;
+     --negro30: rgba(0,0,0,0.3);
+     --negro40: rgba(0,0,0,0.4);
      --negro50: rgba(0,0,0,0.5);
      --negro60: rgba(0,0,0,0.6);
      --negro70: rgba(0,0,0,0.7);
@@ -87,11 +89,31 @@ p {
     line-height: 1.6em;
     letter-spacing: 0.2px;
 }
+footer {
+    font-family: ABeeZee-Regular;
+    font-size: 0.7em;
+    letter-spacing: 0.35px;
+    color: var(--negro40);
+    background-color: var(--gris_menuus);
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-auto-flow: column;
+    height: 95px;
+    padding: 0 20px 0 40px;
+}
+ul li a {
+    text-decoration: none;
+    color:var(--negro40);
+    padding: 18px;
+    transition: var(--trans);
+}
+ul li a:hover {color: var(--morado);}
 
 /* ----- FONDOS - BKGR */
 .bkgr-qrs {
     position: absolute;
-    top: -40px;
+    /* top: 0; */
     background: url('../images/bkgr-qrs@2x.jpg')top center;
     background-repeat: no-repeat;
     background-size: 115% auto;
@@ -159,11 +181,10 @@ nav {right: 0;}
         font-family: ABeeZee-Regular;
         font-size: 15px;
         letter-spacing: 0.9px;
-        text-decoration: none;
         padding: 26px 22px;
         transition: var(--trans);
     }
-    ul li a:hover {
+    nav ul li a:hover {
         color: var(--morado);
         box-shadow: 0 16px 22px -7px rgba(0,0,0,0.2);
     }
@@ -189,13 +210,13 @@ nav {right: 0;}
 #hero .celular, #hero .qr {position: absolute;}
 #hero .imagenes .celular {
     max-width: 500px;
-    left:-70px;
+    left:-15%;
     top: -35px;
 }
 #hero .imagenes .qr {
     max-width: 150px;
     bottom: -40px;
-    left: 300px;
+    left: 245px;
     
 }
 /* ----- CONFIANZA */
@@ -293,7 +314,7 @@ nav {right: 0;}
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template: repeat(2, 25% 25%) / repeat(3, minmax(100px, 300px));
+    grid-template: repeat(1, 25% 25%) / repeat(3, minmax(100px, 300px));
     gap: 170px 10%;
     text-align: center;
 }
@@ -311,8 +332,23 @@ nav {right: 0;}
 #beneficios .isotipo {width: 35%;}
 
 /* ----- FOOTER */
-footer {
-    background-color: var(--gris_menuus);
-    display: grid;
-    justify-content: space-between;
+footer ul, footer ul li, footer .mr {display: flex; align-items: center;}
+footer .links {
+    display: flex;
+    border-top: 1px solid var(--gris_claro);
+    padding-top: 8px;
+}
+footer .mr {margin-right: 10px;}
+footer .mr::before {
+    content: "";
+    background: url('../images/m-gris.svg')no-repeat center center;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+footer .redes {
+    font-size: 1.3em;
 }
