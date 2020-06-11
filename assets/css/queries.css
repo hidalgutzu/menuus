@@ -281,16 +281,16 @@
         justify-content: flex-end;
         align-content: flex-start;
         padding: 0 5% 0 25%;
-        margin-top: -150px;
+        margin-top: -170px;
     }
     #confianza .triangulo-1 {
-        width: 30%;
-        top: -20%;
+        width: 20%;
+        top: -160%;
     }
     #confianza .triangulo-2 {
-        max-width: 150px;
+        max-width: 140px;
         top: 60%;
-        left: 0;
+        left: -15px;
     }
     #cambios-ilimitados {
         height: 100vh;
@@ -303,7 +303,7 @@
     #cambios-ilimitados .triangulo-3 {
         top: 8%;
         width: 100%;
-        max-width: 33%;
+        max-width: 45%;
         min-width: 25px;
     }
 
