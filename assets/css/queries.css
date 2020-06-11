@@ -72,7 +72,7 @@
     #confianza .textos {
         align-content: flex-end;
         padding: 0 12% 0 5%;
-        margin-bottom: 0;
+        margin-bottom: 100px;
     }
     #confianza .triangulo-1 {
         width: 70%;
@@ -99,12 +99,82 @@
     }
  }
 
+/* // Small devices (landscape phones, less than 864px) */
+@media (max-width: 864px) { 
+    .bkgr-triangulos {
+        background: url('../images/bkgr-triangulos-864.svg')no-repeat top center;
+        background-size: 100% auto;
+        height: 2500px;
+    }
+    #como-funciona {height: 100vh;}
+    #como-funciona {margin-bottom: 50px;}
+    #como-funciona .items {
+        justify-content: center;
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto auto;
+        grid-auto-flow: column;
+        grid-gap: 40px;
+        margin-bottom: 45px;
+    }
+    #hero .imagenes .qr {
+        width: 35%;
+        left: 165px;
+        top: 80px
+    }
+ }
+
  /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
-    .celular {display: none;}
+    .bkgr-triangulos {
+        top: 35px;
+        background: url('../images/bkgr-triangulos-767.svg')no-repeat top center;
+        background-size: 100% auto;
+        height: 2500px;
+    }
+    #hero .textos {padding-left: 10%;}
+    #hero .imagenes .celular {
+        width: 95%;
+        top: 0;
+    }
+    #hero .imagenes .qr {
+        left: 130px;
+        top: 100px;
+    }
+    #confianza {
+        grid-template-columns: 40% 60%;
+    }
+    #confianza .textos {
+        align-content: flex-start;
+        padding: 0 12% 0 0;
+        margin-top: -200px;
+    }
+    #confianza .triangulo-1 {
+        width: 70%;
+        top: -70%;
+    }
+    #confianza .triangulo-2 {
+        max-width: 170px;
+        top: 35%;
+        left: 2%;
+    }
+    #cambios-ilimitados {
+        align-content: flex-start;
+        height: 80vh;
+    }
+    #cambios-ilimitados .textos {
+        padding: 5% 15% 0 10%;
+    }
+    #cambios-ilimitados .triangulo-3 {
+        top: 10%;
+        width: 36%;
+    }
+    #como-funciona .items {
+        grid-template-columns: 85%;
+    }
  }
 
   /* // Smallest devices */
  @media (max-width: 575.98px) { 
+    #hero {background: brown;}
     .celular {display: none;}
  }
