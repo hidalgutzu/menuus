@@ -55,7 +55,7 @@
         top: 50%;
     }
 
-    #cambios-ilimitados {grid-template-columns: 65% 45%;}
+    #cambios-ilimitados {grid-template-columns: 650 40%;}
     #cambios-ilimitados .textos {
         text-align: right;
         /* padding: 22% 25% 0 9%; */
