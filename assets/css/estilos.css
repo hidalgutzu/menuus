@@ -294,12 +294,13 @@ nav {right: 0;}
     justify-content: center;
 }
 #como-funciona {
-    padding: 0 8%;
+    padding: 8%;
     margin: 0;
     color: white;
     align-content: center;
     text-align: center;
-    height: 60vh;
+    /* height: 60vh; */
+    height: 100%;
     background: linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.4)100%), url('../images/photo-restaurant-jakub-kapusnak-unsplash.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
