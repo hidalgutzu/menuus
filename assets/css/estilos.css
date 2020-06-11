@@ -143,7 +143,7 @@ ul li a:hover {color: var(--morado);}
     cursor: pointer;
     border: 0;
     border-radius: 6px;
-    font-family: ABeeZee-Regular;
+    font-family: 'ABeeZee', sans-serif;
     font-size: 0.9em;
     margin: 0 auto;
     padding: 18px 32px;
