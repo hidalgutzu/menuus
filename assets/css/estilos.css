@@ -62,9 +62,9 @@ h1 {
     margin-bottom: 10px;
 }
     h1 span {
-        font-family: Montserrat-Medium;
+        font-family: 'Montserrat', sans-serif;
         font-size: 0.4em;
-        font-weight: 300;
+        font-weight: 500;
         color: #272727;
         letter-spacing: 0.5px;
         line-height: 1.2em;
@@ -74,7 +74,7 @@ h2 {font-size: 2.7em;
 }
 
 h2, span, h3 {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
     letter-spacing: 0.7px;
     line-height: 1.1em;
@@ -84,7 +84,7 @@ span, h3 {
     padding-bottom: 5px;
     display: block;
 }
-h4, p {font-family: ABeeZee-Regular;}
+h4, p, footer {font-family: 'ABeeZee', sans-serif;}
 h4 {
     font-size: 1.2em;
     margin: 10px 0;
@@ -95,7 +95,6 @@ p {
     letter-spacing: 0.2px;
 }
 footer {
-    font-family: ABeeZee-Regular;
     font-size: 0.7em;
     letter-spacing: 0.35px;
     color: var(--negro40);
@@ -183,7 +182,7 @@ nav {right: 0;}
         padding: 26px 0;
     }
     nav ul li a {
-        font-family: ABeeZee-Regular;
+        font-family: 'ABeeZee', sans-serif;
         font-size: 15px;
         letter-spacing: 0.9px;
         padding: 26px 22px;
@@ -200,7 +199,7 @@ nav {right: 0;}
     grid-template-columns: 55% 45%;
 }
 #hero .span-morado {
-    font-family: Montserrat-Regular;
+    font-family: 'Montserrat', sans-serif;
     color: var(--morado);
     font-size: 1em;
     display: block;
