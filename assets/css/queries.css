@@ -204,8 +204,8 @@
     }
     #hero .imagenes .celular {
         position: relative;
-        width: 75%;
-        left: 70px;
+        width: 70%;
+        left: 40px;
         margin-top: 35px;
     }
     #hero .imagenes .qr {
@@ -267,4 +267,6 @@
         padding: 0 40%;
     }
     #beneficios .circulos {display: none;}
+
+    footer ul li a {padding: 10px;}
  }
