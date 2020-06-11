@@ -21,6 +21,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body class="body">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+    FB.init({
+    xfbml            : true,
+    version          : 'v7.0'
+    });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="108915577524940"
+    theme_color="#3F00FF"
+    logged_in_greeting="¡Hola! Tenemos una excelente promoción, ¿te gustaría conocerla?"
+    logged_out_greeting="¡Hola! Tenemos una excelente promoción, ¿te gustaría conocerla?">
+    </div>
     <div class="bkgr-qrs"></div>
     <div class="bkgr-triangulos"></div>
     <header id="encabezado">
