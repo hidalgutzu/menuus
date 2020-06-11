@@ -169,8 +169,8 @@ ul li a:hover {color: var(--morado);}
 }
 .logo, nav {
     position: fixed;
-    background: var(--blanco90);
 }
+.logo, nav ul li {background: var(--blanco90);}
 .logo, nav {z-index: 9999;}
 .logo {
     width: 180px;
