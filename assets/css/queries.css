@@ -101,6 +101,12 @@
 
 /* // Small devices (landscape phones, less than 864px) */
 @media (max-width: 864px) { 
+    .bkgr-qrs {
+        background: url('../images/bkgr-qrs@2x.jpg')top right;
+        background-repeat: no-repeat;
+        background-size: auto 30%;
+        height: 2500px;
+    }
     .bkgr-triangulos {
         background: url('../images/bkgr-triangulos-864.svg')no-repeat top center;
         background-size: 100% auto;
@@ -175,6 +181,90 @@
 
   /* // Smallest devices */
  @media (max-width: 575.98px) { 
-    #hero {background: brown;}
-    .celular {display: none;}
+    .bkgr-triangulos {
+        top: 35px;
+        background: url('../images/bkgr-triangulos-575.svg')no-repeat top center;
+        background-size: 100% auto;
+        height: 2500px;
+    }
+
+    #encabezado {height: 100vh;}
+    #hero {
+        text-align: center;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 15%;
+        justify-items: center;
+        align-items: center;
+    }
+    #hero .textos {padding-left: 0;}
+    #hero .span-morado::after {
+        content: " ─";
+        color: var(--morado);
+    }
+    #hero .imagenes .celular {
+        position: relative;
+        width: 75%;
+        left: 70px;
+        margin-top: 35px;
+    }
+    #hero .imagenes .qr {
+        left: 60px;
+        top: 100px;
+    }
+    #confianza {
+        background: var(--rojo);
+        height: 100vh;
+        grid-template-columns: 1fr;
+    }
+    #confianza .icono-covid {
+        display: flex;
+        justify-self: flex-end;
+    }
+    #confianza .textos {
+        text-align: right;
+        justify-content: flex-end;
+        align-content: flex-start;
+        padding: 0 5% 0 25%;
+        margin-top: -150px;
+    }
+    #confianza .triangulo-1 {
+        width: 30%;
+        top: -51%;
+    }
+    #confianza .triangulo-2 {
+        max-width: 150px;
+        top: 60%;
+        left: 0;
+    }
+    #cambios-ilimitados {
+        height: 100vh;
+        align-content: center;
+    }
+    #cambios-ilimitados .textos {
+        padding: 0 8% 0 5%;
+    }
+    #cambios-ilimitados .triangulo-3 {
+        top: 10%;
+        width: 100%;
+        max-width: 33%;
+        min-width: 25px;
+    }
+
+    #beneficios {
+        background: url('../images/bkgr-beneficios@2x.jpg')no-repeat top center;
+        background-size: cover;
+        padding: 12% 5% 0 5%;
+        height: 100vh;
+        grid-template: repeat(1, 25% 25%) / repeat(2, minmax(100px, 300px));
+        gap: 50px 5%;
+        text-align: center;
+    }
+    #beneficios div:nth-last-child(1) {
+        width: 90vw;
+        display: grid;
+        justify-items: center;
+        padding: 0 40%;
+    }
+    #beneficios .circulos {display: none;}
  }
