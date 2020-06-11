@@ -28,6 +28,7 @@ body {
      --blanco70: rgba(255,255,255,0.7);
      --blanco80: rgba(255,255,255,0.8);
      --blanco90: rgba(255,255,255,0.9);
+     --blanco95: rgba(255,255,255,0.95);
      --trans: all 0.2s ease-in-out;
 }
 
@@ -170,7 +171,7 @@ ul li a:hover {color: var(--morado);}
 .logo, nav {
     position: fixed;
 }
-.logo, nav ul li {background: var(--blanco90);}
+.logo, nav ul li {background: var(--blanco95);}
 .logo, nav {z-index: 9999;}
 .logo {
     width: 180px;
@@ -181,8 +182,10 @@ nav {right: 0;}
     nav ul li {
         display: inline-block;
         padding: 26px 0;
+        margin: 0 -4px;
     }
     nav ul li a {
+        background: none;
         font-family: 'ABeeZee', sans-serif;
         font-size: 15px;
         letter-spacing: 0.9px;

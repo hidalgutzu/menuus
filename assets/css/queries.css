@@ -181,8 +181,6 @@
 
   /* // Smallest devices */
  @media (max-width: 575.98px) { 
-     nav ul li a {background: var(--blanco90);}
-     nav ul li {margin: 0 -4px;}
     .bkgr-triangulos {
         top: 35px;
         background: url('../images/bkgr-triangulos-575.svg')no-repeat top center;
@@ -194,7 +192,6 @@
     
     #encabezado .logo {
         background: none;
-        margin-top: 10px;
         position: absolute;
     } 
     #hero h1 span, #hero .span-morado {padding: 0 20px;}
