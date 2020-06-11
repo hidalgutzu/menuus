@@ -4,11 +4,11 @@
      padding: 0;
      box-sizing: border-box;
 }
-
 body {
-     color: black;
-     font-size: 16px;
-     height: 100%;
+    overflow-x: hidden;
+    color: black;
+    font-size: 16px;
+    height: 100%;
 }
 
 :root {
@@ -53,6 +53,7 @@ button, input, select, textarea {
      box-sizing: border-box;
      margin: 0;
 }
+
 /* -------------------------------IDS */
 h1 {
     font-family: 'Raleway', sans-serif;
@@ -193,7 +194,7 @@ nav {right: 0;}
         transition: var(--trans);
     }
     nav ul li a:hover {
-        color: var(--morado);
+        color: var(--rojo);
         box-shadow: 0 16px 22px -7px rgba(0,0,0,0.2);
     }
 #hero {
@@ -362,3 +363,63 @@ footer .mr::before {
 footer .redes {
     font-size: 1.3em;
 }
+
+ /* BURGER MENU */
+    /* .logo.zindex {z-index: -1;} */
+    /* .triangulo-1.zindex {z-index: -1;} */
+    .hideoverflow {
+        overflow: hidden;
+    }
+    .burger-button {
+        transition: var(--transicion);
+    }
+    .menu-principal.ocultar {display: none;}
+    .burger-menu {
+        position: absolute;
+        background: rgba(255,255,255,0.95);
+        z-index: 9999;
+        height: 100vh;
+        right: 0;
+        width: 0;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .burger-menu.is-active {
+        width: 100vw;
+    }
+    .burger-menu ul {
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding: 8% 0;
+    }
+    .burger-menu ul li a {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid rgba(255,255,255,0.0);
+        transition: var(--trans);
+    }
+    .burger-menu ul li a:hover {
+        color: var(--rojo);
+        border-bottom: 3px solid var(--rojo);
+    }
+    a.boton-cerrar {
+        position: absolute;
+        background: url("../images/close.svg") no-repeat center center;
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        right: 10px;
+        cursor: pointer;
+        margin: 7px 7px 0;
+        z-index: 9999;
+        transition: var(--transicion);
+    }
+    a.boton-cerrar:hover {
+        background: url("../images/close-hover.svg") no-repeat center center;
+        background-size: 3em; 
+    }
+    .boton-cerrar img {
+        width: 50px;
+    }
