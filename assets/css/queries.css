@@ -15,6 +15,8 @@
     #cambios-ilimitados .textos {
         color: white;
     }
+
+    #cambios-ilimitados .icono-infinito.hide-negro {display: none;}
 }
 
 /* // Large devices (desktops, less than 1200px) */
@@ -66,6 +68,10 @@
         top: 50%;
     }
 
+    #cambios-ilimitados .icono-infinito.negro {display: inherit;}
+
+    #cambios-ilimitados .icono-infinito.hide-blanco {display: none;}
+
     #cambios-ilimitados {grid-template-columns: 650 40%;}
     #cambios-ilimitados .textos {
         color: black;
@@ -115,6 +121,7 @@
         /* margin-bottom: 100px; */
         height: 80vh;
     }
+
     #confianza .triangulo-1 {
         width: 70%;
         top: -40%;
@@ -124,8 +131,19 @@
         top: 35%;
         left: 20%;
     }
-    #cambios-ilimitados {height: 90vh; align-content: center;}
+
+    #cambios-ilimitados .icono-infinito.blanco {display: inherit;}
+
+    #cambios-ilimitados {
+        height: 90vh;
+        align-content: center;
+        background: var(--rojo);
+    }
+
+    #cambios-ilimitados .icono-infinito.hide-negro {display: none;}
+
     #cambios-ilimitados .textos {
+        color: white;
         text-align: right;
         padding: 0 20% 0 10%;
     }
@@ -165,6 +183,7 @@
     #confianza .triangulo-2 {
         top: 130%;
         left: 15%;
+        z-index: 99;
     }
 
     #como-funciona {height: 100%;}
@@ -218,12 +237,17 @@
         max-width: 170px;
         top: 125%;
         left: 2%;
+        z-index: 99;
     }
     #cambios-ilimitados {
+        background-color: white;
         align-content: flex-start;
         height: 80vh;
     }
+    #cambios-ilimitados .icono-infinito.hide-blanco {display: none;}
+    #cambios-ilimitados .icono-infinito.negro {display: inherit;}
     #cambios-ilimitados .textos {
+        color: black;
         padding: 5% 15% 0 10%;
     }
     #cambios-ilimitados .triangulo-3 {
@@ -308,6 +332,7 @@
         height: 100vh;
         align-content: center;
     }
+    #cambios-ilimitados .icono-infinito.negro {display: inherit;margin-left: 0;}
     #cambios-ilimitados .textos {
         text-align: left;
         padding: 0 0 0 6%;
