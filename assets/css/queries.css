@@ -190,8 +190,7 @@
 
     #encabezado {height: 100vh;}
     
-    #hero h1 span {width: 80%;}
-    #hero .span-morado {width: 70%;} 
+    #hero h1 span, #hero .span-morado {padding: 0 20px;}
     #hero {
         text-align: center;
         height: 100vh;
@@ -216,6 +215,8 @@
         left: 60px;
         top: 100px;
     }
+    #hero .boton-primario {margin-top: 20px;}
+
     #confianza {
         background: var(--rojo);
         height: 100vh;
@@ -234,7 +235,7 @@
     }
     #confianza .triangulo-1 {
         width: 30%;
-        top: -51%;
+        top: -20%;
     }
     #confianza .triangulo-2 {
         max-width: 150px;
