@@ -122,14 +122,14 @@ ul li a:hover {color: var(--morado);}
     position: absolute;
     background: url('../images/bkgr-qrs@2x.jpg')top center;
     background-repeat: no-repeat;
-    background-size: 115% auto;
+    background-size: 125% auto;
     width: 100%;
     height: 2550px;
     z-index: -1;
 }
 .bkgr-triangulos {
     position: absolute;
-    top: 35px;
+    top: 30px;
     background: url('../images/bkgr-triangulos.svg')top center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -255,8 +255,8 @@ nav {right: 0;}
     flex-flow: column;
     align-content: center;
     text-align: left;
-    padding: 0 18% 0 15%;
-    margin-top: -20px;
+    padding: 0 16% 0 18%;
+    margin-bottom: -100px;
 }
 #confianza .icono-covid {
     width: 60px;
@@ -268,7 +268,7 @@ nav {right: 0;}
     position: relative;
     height: 100vh;
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 55% 45%;
     align-content: center;
 }
 #cambios-ilimitados .icono-infinito {
@@ -280,11 +280,11 @@ nav {right: 0;}
     padding: 10% 24% 0 16%;
 }
 #cambios-ilimitados .triangulo-3 {
-    width: 30%;
-    max-width: 450px;
+    width: 34%;
+    max-width: 500px;
     min-width: 200px;
     position: absolute;
-    top: 50px;
+    top: 120px;
     right: 0;
 }
 
