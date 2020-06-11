@@ -16,17 +16,17 @@ closeButton.addEventListener('click', hide)
 
 // la función ADD
 function show() {
+menu.classList.remove('hidebm');
 closeButton.classList.remove('ocultar');
 menuPrincipal.classList.add('ocultar');
-menu.classList.remove('hidebm');
 menu.classList.add('is-active');
 body.classList.add('hideoverflow');
 }
 // la función REMOVE
 function hide() {
+menu.classList.add('hidebm');
 closeButton.classList.add('ocultar');
 menuPrincipal.classList.remove('ocultar');
-menu.classList.add('hidebm');
 menu.classList.remove('is-active');
 body.classList.remove('hideoverflow');
 }
