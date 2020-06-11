@@ -1,8 +1,19 @@
 @media (max-width: 2200px) {
+    .bkgr-triangulos {
+        top: 30px;
+        background: url('../images/bkgr-triangulos-max.svg')no-repeat top center;
+        background-size: 100% auto;
+        height: 2500px;
+    }
+
     #confianza .textos {
         align-content: flex-end;
         padding: 0 4% 0 10%
         margin-bottom: 0px;
+    }
+
+    #cambios-ilimitados .textos {
+        color: white;
     }
 }
 
@@ -57,6 +68,7 @@
 
     #cambios-ilimitados {grid-template-columns: 650 40%;}
     #cambios-ilimitados .textos {
+        color: black;
         text-align: right;
         /* padding: 22% 25% 0 9%; */
     }
