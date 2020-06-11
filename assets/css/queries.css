@@ -1,0 +1,54 @@
+@media (max-width: 575.98px) { 
+    .celular {display: none;}
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .celular {display: none;}
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .celular {display: none;}
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    #encabezado, #hero {
+        height: 70vh;
+    }
+    #hero {align-content: flex-end;}
+    #hero .textos {padding-left: 17%;}
+    #hero .imagenes .celular {
+        max-width: 450px;
+        top: -55px;
+    }
+    #hero .imagenes .qr {left: 225px;}
+    #confianza .triangulos {
+        height: 40vh;
+    }
+    #confianza {
+        height: 80vh;
+        align-content: flex-end;
+    }
+    #confianza .textos {
+        align-content: flex-end;
+        padding: 0 13% 0 5%;
+        margin-bottom: -50px;
+    }
+    #confianza .triangulo-1 {
+        width: 70%;
+        top: -60%;
+    }
+    #confianza .triangulo-2 {
+        max-width: 230px;
+        top: 50%;
+    }
+    #cambios-ilimitados .textos {
+        text-align: right;
+        padding: 20% 22% 0 9%;
+    }
+    #cambios-ilimitados .triangulo-3 {
+        top: 25%;
+    }
+ }
