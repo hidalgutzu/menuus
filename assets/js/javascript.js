@@ -18,6 +18,7 @@ closeButton.addEventListener('click', hide)
 function show() {
 closeButton.classList.remove('ocultar');
 menuPrincipal.classList.add('ocultar');
+menu.classList.remove('hidebm');
 menu.classList.add('is-active');
 body.classList.add('hideoverflow');
 }
@@ -25,6 +26,7 @@ body.classList.add('hideoverflow');
 function hide() {
 closeButton.classList.add('ocultar');
 menuPrincipal.classList.remove('ocultar');
+menu.classList.add('hidebm');
 menu.classList.remove('is-active');
 body.classList.remove('hideoverflow');
 }
