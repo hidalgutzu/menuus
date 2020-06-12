@@ -86,7 +86,11 @@ span, h3 {
     padding-bottom: 5px;
     display: block;
 }
-h4, p, footer {font-family: 'ABeeZee', sans-serif;}
+h4, p, small, footer, #planes ul li {font-family: 'ABeeZee', sans-serif;}
+small {
+    font-size: 0.7em;
+    letter-spacing: 0.3px;
+}
 h4 {
     font-size: 1.2em;
     margin: 10px 0;
@@ -127,6 +131,13 @@ ul li a:hover {color: var(--morado);}
     height: 2550px;
     z-index: -1;
 }
+
+.internas.qrs {
+    background: url('../images/bkgr-beneficios@2x.jpg')top center;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+}
+
 .bkgr-triangulos {
     position: absolute;
     top: 30px;
@@ -202,13 +213,13 @@ nav {right: 0;}
     align-content: center;
     grid-template-columns: 55% 45%;
 }
-#hero .span-morado {
+.span-morado {
     font-family: 'Montserrat', sans-serif;
     color: var(--morado);
     font-size: 1em;
     display: block;
-    padding: 15px 0 30px 0;
 }
+#hero .span-morado {padding: 15px 0 30px 0;}
 #hero .span-morado::before {
     content: "─ ";
     color: var(--morado);
@@ -226,6 +237,7 @@ nav {right: 0;}
     bottom: -40px;
     left: 245px;
 }
+
 /* ----- CONFIANZA */
 #confianza {
     color: white;
@@ -362,6 +374,150 @@ footer .mr::before {
 }
 footer .redes {
     font-size: 1.3em;
+}
+
+/* ----- INTERNAS ---------------------------------------- */
+#header-internas {
+    display: grid;
+    height: 265px;
+    text-align: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+#header-internas .titulo {margin: 40px;}
+#header-internas h1 span, #header-internas h1 {line-height: 1.3em;}
+
+/* ----- PLANES */
+.plan.premium {
+    opacity: 0.95;
+    background: #FFFFFF;
+    border: 4px solid #3F00FF;
+    box-shadow: 0 21px 30px -3px rgba(63,0,255,0.42);
+}
+
+#planes, #lo-mejor .container, #planes-adicionales, #lo-mejor  {
+    display: grid;
+    justify-content: center;
+}
+#planes {
+    text-align: center;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    margin-top: 4%;
+}
+#planes h2, #planes-adicionales h2 {font-size: 1.9em;}
+#planes h2 {margin: 30px 0 10px 0;}
+
+#planes .premium h2, #planes .premium .precio {color: var(--morado);}
+#planes .precio {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.plan, #planes-adicionales .container {background-color: var(--blanco95);}
+.plan {
+    min-width: 300px;
+    max-width: 350px;
+    padding: 55px 20px 0;
+}
+.precio small {
+    position: absolute; 
+    right: 0; 
+    top: 25px;
+}
+.precio .items {
+    display: flex;
+    justify-content: center;
+}
+.precio .cantidad {
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 0.6em;
+    margin: 0 7px;
+}
+.precio .signo, .precio .mxn {
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+.plan ul {margin-bottom: 25px;}
+.plan .boton-primario {
+    margin: 25px 0;
+}
+
+#planes .linea {
+    border-bottom: 1px solid #EDEDED;
+}
+#planes ul li {
+    font-size: 0.8em;
+    padding: 7px 0;
+}
+
+/* ----- PLANES ADICIONALES */
+.ico-adicionales {
+    width: 45px;
+    margin-right: 15px;
+}
+
+#planes-adicionales {
+    margin: 5% 0 8%;
+    width: 100%;
+}
+#planes-adicionales .container {
+    width: 100%;
+    display: grid;
+    flex-flow: column;
+}
+#planes-adicionales .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 0 0;
+}
+#planes-adicionales h2 {margin: 0;}
+
+
+#lo-mejor .beneficios, #planes-adicionales .categorias  {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#planes-adicionales .categorias {
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    margin: 4% 2% 6%;
+}
+#planes-adicionales .categorias .item {
+    display: grid;
+    /* width: 300px; */
+    text-align: center;
+    /* padding: 0 20px; */
+    
+    border-right: 1px solid #EDEDED;
+}
+#planes-adicionales .categorias .item:last-child {
+    border-right: none;
+}
+#planes-adicionales .precio {
+    margin: 20px 0;
+}
+
+/* ----- LO MEJOR */
+#lo-mejor {
+    width: 100%;
+    height: auto;
+}
+#lo-mejor h3 {line-height: 1.4em;}
+#lo-mejor .container {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+#lo-mejor .textos {margin: 0 15%;}
+#lo-mejor .beneficios {
+    margin: 5% 8%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 300px));
+
 }
 
  /* BURGER MENU */
