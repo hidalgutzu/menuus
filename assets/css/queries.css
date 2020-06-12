@@ -270,6 +270,7 @@
         grid-template: auto auto 1fr / 1fr;
         grid-gap: 30px;
     }
+    #planes-adicionales .categorias .item {border-right: 0;}
     #planes-adicionales .precio {
         margin: 10px 0;
     }
