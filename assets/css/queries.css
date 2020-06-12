@@ -256,6 +256,38 @@
     #como-funciona .items {
         grid-template-columns: 85%;
     }
+
+    #planes {grid-auto-flow: row;}
+    .plan {width: 600px;}
+
+    .ico-adicionales {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #planes-adicionales .container {padding: 0 15px;}
+    #planes-adicionales .categorias {
+        grid-auto-flow: row;
+        grid-template: auto auto 1fr / 1fr;
+        grid-gap: 30px;
+    }
+    #planes-adicionales .precio {
+        margin: 10px 0;
+    }
+    #planes-adicionales small {padding-top: 20px;}
+    #planes-adicionales .titulo {
+        padding-bottom: 15px;
+        flex-flow: column;
+    }
+    #planes h2, #planes-adicionales h2 {font-size: 1.5em;}
+
+    #lo-mejor .container {margin-bottom: 20px;}
+    #lo-mejor .beneficios {
+        margin: 5% 8%;
+        grid-auto-flow: row;
+        grid-template: 1fr / 1fr 1fr;
+        grid-gap: 30px;
+    }
+    #lo-mejor .textos {margin: 10% 10% 0;}
  }
 
   /* // Smallest devices */
@@ -381,5 +413,7 @@
         margin: 0 auto;
         padding-bottom: 30px;
    }
+
+   .plan {width: 300px;}
  }
 

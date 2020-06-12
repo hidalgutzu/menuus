@@ -484,7 +484,13 @@ footer .redes {
 
 #planes-adicionales .categorias {
     grid-template-columns: repeat(3, minmax(100px, 300px));
-    margin: 4% 2% 6%;
+    margin: 4% 2% 3%;
+}
+#planes-adicionales small {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 40px;
+    color: var(--negro60);
 }
 #planes-adicionales .categorias .item {
     display: grid;
@@ -517,9 +523,7 @@ footer .redes {
     margin: 5% 8%;
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 300px));
-
 }
-
  /* BURGER MENU */
     /* .logo.zindex {z-index: -1;} */
     /* .triangulo-1.zindex {z-index: -1;} */
