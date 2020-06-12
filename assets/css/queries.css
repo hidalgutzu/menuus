@@ -46,7 +46,7 @@
         max-width: 450px;
         top: -55px;
     }
-    #hero .imagenes .qr {left: 225px; background-color: lawngreen;}
+    #hero .imagenes .qr {left: 225px;}
     #confianza .triangulos {
         height: 40vh;
     }
@@ -109,7 +109,6 @@
         top: -25px;
     }
     #hero .imagenes .qr {
-        background: indigo;
         width: 32%;
         left: 175px;
         bottom: 0;
@@ -196,7 +195,6 @@
         margin-bottom: 45px;
     }
     #hero .imagenes .qr {
-        background-color: green;
         width: 35%;
         left: 165px;
         top: 80px
@@ -217,7 +215,6 @@
         top: 0;
     }
     #hero .imagenes .qr {
-        background: lightpink;
         left: 130px;
         top: 100px;
     }
