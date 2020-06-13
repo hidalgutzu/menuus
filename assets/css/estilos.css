@@ -588,7 +588,10 @@ footer .redes {
 }
 
 /* ----- NOSOTROS */
-.bkgr-nosotros {width: 100%;}
+.bkgr-nosotros {
+    width: 100%;
+    max-width: 1000px;
+}
 
 
  /* BURGER MENU */
