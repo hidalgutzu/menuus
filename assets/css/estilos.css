@@ -587,7 +587,8 @@ footer .redes {
     grid-template-columns: repeat(4, minmax(100px, 300px));
 }
 
-/* ----- ¿CÓMO FUNCIONA? */
+/* ----- NOSOTROS */
+.bkgr-nosotros {width: 100%;}
 
 
  /* BURGER MENU */
