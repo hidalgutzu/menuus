@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tu Menú digital QR || menuus.app</title>
+    <meta name="description" content="Creación de menús digitales para restaurantes y cafeterías - Ideales ante la nueva normalidad COVID-19"/>
+    <meta name="keywords" content="menu digital, menu qr, menu web, menu para restaurante, menu para cafetería, nueva normalidad, covid-19"/>
+    <meta name="author" content="hola@menuus.app" />
+    <meta name="copyright" content="menuus®" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/queries.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body class="body internas qrs">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+    FB.init({
+    xfbml            : true,
+    version          : 'v7.0'
+    });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="108915577524940"
+    theme_color="#3F00FF"
+    logged_in_greeting="¡Hola! Tenemos una excelente promoción, ¿te gustaría conocerla?"
+    logged_out_greeting="¡Hola! Tenemos una excelente promoción, ¿te gustaría conocerla?">
+    </div>
+    <header>
+        <a href="https://menuus.app/"><img src="./assets/images/menuus.svg" alt="menuus.app" class="logo"></a>
+        <nav class="menu-principal">
+            <ul>
+                <li><a class="boton-planes" href="./planes.html">Planes</a></li>
+                <li><a class="burger-button" href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu hidebm">
+            <a href="#" class="boton-cerrar ocultar" id="close-menu"></a>
+            <ul>
+                <a href="https://menuus.app/"><img src="./assets/images/m-avatar.svg" alt="menuus.app"></a>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./como-funciona.html">¿Cómo funciona?</a></li>
+                <li><a href="./planes.html">Planes</a></li>
+                <li><a href="./preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                <!-- <li><a href="./soporte.html">Soporte</a></li> -->
+            </ul>
+        </div>
+        <div id="header-internas" class="titulo">
+            <div class="textos">
+                <h1 class="titulo">¿Cómo funciona?</h1>
+            </div>
+        </div>
+    </header>
+    
+    <section id="white-box" class="tu-plan">
+        <div class="container">
+            <div class="titulo">
+                <img src="./assets/images/icono-tu-plan.svg" alt="planes adicionales menuus" class="ico-adicionales">
+                <h2>Elige tu plan</h2>
+            </div>
+            <span class="span-morado"><strong>Paso 1</strong></span>
+            <p>Elige el <a class="txt_links" href="./planes.html">Plan Básico</a> si tu menú no excede en más de 8 categorías o 30 productos (platillos/bebidas), en caso contrario tendrás que elegir el <a class="txt_links" href="./planes.html">Plan Premium</a> con un número ilimitado de Categorías y hasta 2 idiomas (disponibles Inglés y Español) y 2 tipo de moneda (disponibles peso mexicano y dolar).</p>
+            <br><br>
+            <span class="span-morado"><strong>Paso 2</strong></span>
+            <p>Elige el <a class="txt_links" href="./planes.html">Plan Básico</a> si tu menú no excede en más de 8 categorías o 30 productos (platillos/bebidas), en caso contrario tendrás que elegir el <a class="txt_links" href="./planes.html">Plan Premium</a> con un número ilimitado de Categorías y hasta 2 idiomas (disponibles Inglés y Español) y 2 tipo de moneda (disponibles peso mexicano y dolar).</p>
+            <img class="triangulo-whitebox derecho" src="./assets/images/triangulo-mobile@2x.png" alt="Tu plan menuus.app">
+            <div class="triangulito-rojo derecho"></div>
+        </div>
+    </section>
+    <section id="white-box" class="tu-contenido">
+        <div class="container">
+            <div class="titulo">
+                <img src="./assets/images/icono-contenido.svg" alt="planes adicionales menuus" class="ico-adicionales">
+                <h2>Elige tu plan</h2>
+            </div>
+            <span class="span-morado"><strong>Paso 1</strong></span>
+            <p>Elige el <a class="txt_links" href="./planes.html">Plan Básico</a> si tu menú no excede en más de 8 categorías o 30 productos (platillos/bebidas), en caso contrario tendrás que elegir el <a class="txt_links" href="./planes.html">Plan Premium</a> con un número ilimitado de Categorías y hasta 2 idiomas (disponibles Inglés y Español) y 2 tipo de moneda (disponibles peso mexicano y dolar).</p>
+            <br><br>
+            <span class="span-morado"><strong>Paso 2</strong></span>
+            <p>Elige el <a class="txt_links" href="./planes.html">Plan Básico</a> si tu menú no excede en más de 8 categorías o 30 productos (platillos/bebidas), en caso contrario tendrás que elegir el <a class="txt_links" href="./planes.html">Plan Premium</a> con un número ilimitado de Categorías y hasta 2 idiomas (disponibles Inglés y Español) y 2 tipo de moneda (disponibles peso mexicano y dolar).</p>
+            <img class="triangulo-whitebox izquierdo" src="./assets/images/triangulo-code@2x.png" alt="Tu plan menuus.app">
+            <div class="triangulito-rojo izquierdo"></div>
+        </div>
+    </section>
+    <section id="white-box" class="manos-a-la-obra">
+        <div class="container">
+            <div class="titulo">
+                <img src="./assets/images/icono-manos-obra.svg" alt="planes adicionales menuus" class="ico-adicionales">
+                <h2>Manos a la obra</h2>
+            </div>
+            <span class="span-morado"><strong>Paso 1</strong></span>
+            <p>Elige el <a class="txt_links" href="./planes.html">Plan Básico</a> si tu menú no excede en más de 8 categorías o 30 productos (platillos/bebidas), en caso contrario tendrás que elegir el <a class="txt_links" href="./planes.html">Plan Premium</a> con un número ilimitado de Categorías y hasta 2 idiomas (disponibles Inglés y Español) y 2 tipo de moneda (disponibles peso mexicano y dolar).</p>
+            <br><br>
+            <span class="span-morado"><strong>Paso 2</strong></span>
+            <p>Elige el <a class="txt_links" href="./planes.html">Plan Básico</a> si tu menú no excede en más de 8 categorías o 30 productos (platillos/bebidas), en caso contrario tendrás que elegir el <a class="txt_links" href="./planes.html">Plan Premium</a> con un número ilimitado de Categorías y hasta 2 idiomas (disponibles Inglés y Español) y 2 tipo de moneda (disponibles peso mexicano y dolar).</p>
+        </div>
+    </section>
+    <footer>
+        <div class="links">
+            <small class="mr">® 2020</small>
+            <ul>
+                <li><a href="./cookies.html" alt="cookies">Cookies</a></li>
+                <li><a href="./terminos-y-condiciones.html" alt="términos y condiciones">Términos</a></li>
+                <li><a href="./politicas.html" alt="políticas de privacidad">Políticas</a></li>
+            </ul>
+        </div>
+        <div class="redes">
+            <ul>
+                <li><a target="_blank" href="https://twitter.com/menuusapp" alt="Twitter" text=""><i class="fab fa-twitter"></i></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/menuusapp/" alt="Facebook" text=""><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./assets/js/javascript.js"></script>
+</body>
+</html>

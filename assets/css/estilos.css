@@ -136,6 +136,7 @@ ul li a:hover {color: var(--morado);}
     background: url('../images/bkgr-beneficios@2x.jpg')top center;
     background-size: 100% auto;
     background-repeat: repeat-y;
+    background-attachment: fixed;
 }
 
 .bkgr-triangulos {
@@ -377,12 +378,73 @@ footer .redes {
 }
 
 /* ----- INTERNAS ---------------------------------------- */
+#white-box {
+    display: grid;
+    justify-content: center;
+    padding: 0 8% 2%;
+}
+#white-box .container {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    max-width: 1000px;
+    padding: 8% 12%;
+}
+#white-box .titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6%;
+}
+#white-box h2 {
+    font-size: 1.9em;
+    margin-bottom: 0;
+}
+#white-box .span-morado {
+    margin-bottom: 2%;
+}
+#white-box .triangulo-whitebox {
+    position: absolute;
+    bottom: 0;
+    max-width: 160px;
+    z-index: 99;
+    bottom: -157px;
+}
+#white-box .triangulo-whitebox.derecho {right: 0;}
+#white-box .triangulo-whitebox.izquierdo, #white-box .triangulito-rojo.izquierdo {left: 0;}
+#white-box .triangulito-rojo.derecho {
+    right: 0;
+    transform: scaleX(-1);
+}
+#white-box .triangulito-rojo {
+    opacity: 0.9;
+    position: absolute;
+    background: url('../images/triangulito-rojo.svg')no-repeat center center;
+    background-size: cover;
+    width: 45px;
+    height: 68px;
+    bottom: 70px;
+    z-index: 99;
+}
+
+.txt_links {
+    color: var(--morado);
+    text-decoration: none;
+}
+.txt_links:hover {
+    text-decoration: none;
+    border-bottom: 3px double var(--morado);
+}
+
 #header-internas {
     display: grid;
     height: 265px;
     text-align: center;
     align-items: flex-end;
     padding-bottom: 20px;
+}
+#header-internas.titulo {
+    height: 210px;
+    padding-bottom: 0;
 }
 #header-internas .titulo {margin: 40px;}
 #header-internas h1 span, #header-internas h1 {line-height: 1.3em;}
@@ -415,7 +477,7 @@ footer .redes {
     margin-bottom: 40px;
 }
 
-.plan, #planes-adicionales .container {background-color: var(--blanco95);}
+.plan, #planes-adicionales .container, #white-box .container {background-color: var(--blanco95);}
 .plan {
     min-width: 300px;
     max-width: 350px;
@@ -524,6 +586,10 @@ footer .redes {
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 300px));
 }
+
+/* ----- ¿CÓMO FUNCIONA? */
+
+
  /* BURGER MENU */
     /* .logo.zindex {z-index: -1;} */
     /* .triangulo-1.zindex {z-index: -1;} */
