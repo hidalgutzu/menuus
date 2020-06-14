@@ -150,6 +150,10 @@ ul li a:hover {color: var(--morado);}
     z-index: -1;
 }
 
+.linea-roja {
+    border-top: 7px solid red;
+}
+
 /* ----- BOTONES */
 .boton-primario {
     cursor: pointer;
