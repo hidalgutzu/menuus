@@ -520,6 +520,16 @@ footer .redes {
 }
 
 /* ----- PLANES ADICIONALES */
+
+/* paypal */
+.cantidadprod {display: none;}
+.nuevo-platillo {position: relative;}
+.nuevo-platillo table {
+    position: absolute;
+    left: 51px;
+    padding-top: 5px;
+}
+
 .ico-adicionales {
     width: 45px;
     margin-right: 15px;

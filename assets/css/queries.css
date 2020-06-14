@@ -267,6 +267,15 @@
         margin-right: 0;
         margin-bottom: 10px;
     }
+
+    .nuevo-platillo table {
+        position: relative;
+        left: 0;
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    
     #planes-adicionales .container {padding: 0 15px;}
     #planes-adicionales .categorias {
         grid-auto-flow: row;
