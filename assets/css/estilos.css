@@ -106,7 +106,7 @@ footer {
     color: var(--negro40);
     background-color: var(--gris_menuus);
     display: grid;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     grid-auto-flow: column;
     height: 95px;
@@ -121,6 +121,7 @@ ul li a {
 }
 ul li a:hover {color: var(--morado);}
 
+footer ul li a:last-child {padding-right: 0;}
 /* ----- FONDOS - BKGR */
 .bkgr-qrs {
     position: absolute;
@@ -379,6 +380,8 @@ footer .mr::before {
 }
 footer .redes {
     font-size: 1.3em;
+    padding-top: 8px;
+    margin-left: 10px;
 }
 
 /* ----- INTERNAS ---------------------------------------- */
