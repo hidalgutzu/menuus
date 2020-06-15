@@ -487,6 +487,7 @@ footer .redes {
     max-width: 350px;
     padding: 55px 20px 0;
 }
+
 .precio small {
     position: absolute; 
     right: 0; 
@@ -506,6 +507,19 @@ footer .redes {
     font-size: 1.1em;
     line-height: 1.3em;
 }
+.nueva-moneda, .nuevo-idioma {position: relative;}
+.nueva-moneda .signo::before, .nuevo-idioma .signo::before {
+    position: absolute;
+    left: 20%;
+    top: 46px;
+    content: "";
+    background: url('../images/icono-estrella.svg')no-repeat center center;
+    background-size: contain;
+    width: 28px;
+    height: 15px;
+    display: inline-block;
+}
+
 .plan ul {margin-bottom: 25px;}
 .plan .boton-primario {
     margin: 25px 0;

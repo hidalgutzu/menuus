@@ -91,6 +91,10 @@
 
  /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
+    .nueva-moneda .signo::before, .nuevo-idioma .signo::before {
+        left: 18%;
+        top: 46px;
+    }
     .bkgr-triangulos {
         top: 0;
         background: url('../images/bkgr-triangulos-991.svg')no-repeat top center;
@@ -117,7 +121,6 @@
     #confianza .textos {
         align-content: flex-start;
         padding: 10% 12% 0 5%;
-        /* margin-bottom: 100px; */
         height: 80vh;
     }
 
@@ -160,6 +163,10 @@
 
 /* // Small devices (landscape phones, less than 864px) */
 @media (max-width: 864px) { 
+    .nueva-moneda .signo::before, .nuevo-idioma .signo::before {
+        left: 14%;
+        top: 46px;
+    }
     .bkgr-qrs {
         background: url('../images/bkgr-qrs@2x.jpg')top right;
         background-repeat: no-repeat;
@@ -206,6 +213,10 @@
 
  /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
+    .nueva-moneda .signo::before, .nuevo-idioma .signo::before {
+        left: 10%;
+        top: 35px;
+    }
     .bkgr-triangulos {
         top: 35px;
         background: url('../images/bkgr-triangulos-767.svg')no-repeat top center;
@@ -276,7 +287,7 @@
         justify-content: center;
     }
     
-    #planes-adicionales .container {padding: 0 15px;}
+    #planes-adicionales .container {padding: 0 25px;}
     #planes-adicionales .categorias {
         grid-auto-flow: row;
         grid-template: auto auto 1fr / 1fr;
@@ -319,6 +330,11 @@
         background-size: 100% auto;
         height: 2500px;
     }
+
+    .logo {
+        position: absolute;
+        background: 0;
+    } 
 
     #encabezado {height: 100vh;}
     
