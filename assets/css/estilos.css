@@ -86,7 +86,7 @@ span, h3 {
     padding-bottom: 5px;
     display: block;
 }
-h4, p, small, footer, #planes ul li {font-family: 'ABeeZee', sans-serif;}
+h4, p, small, footer, #planes ul li, ol li {font-family: 'ABeeZee', sans-serif;}
 small {
     font-size: 0.7em;
     letter-spacing: 0.3px;
@@ -95,11 +95,14 @@ h4 {
     font-size: 1.2em;
     margin: 10px 0;
 }
-p {
+p, ol li {
     font-size: 0.9em;
     line-height: 1.6em;
     letter-spacing: 0.2px;
 }
+
+ol {margin-left: 23px;}
+
 footer {
     font-size: 0.7em;
     letter-spacing: 0.35px;
@@ -119,9 +122,11 @@ ul li a {
     padding: 18px;
     transition: var(--trans);
 }
-ul li a:hover {color: var(--morado);}
+/* ol li a {padding: 10px 4px;} */
+ul li a:hover, ol li a:hover {color: var(--morado);}
 
 footer ul li a:last-child {padding-right: 0;}
+
 /* ----- FONDOS - BKGR */
 .bkgr-qrs {
     position: absolute;
@@ -144,7 +149,6 @@ footer ul li a:last-child {padding-right: 0;}
 
 .bkgr-triangulos {
     position: absolute;
-    /* top: 30px; */
     background: url('../images/bkgr-triangulos.svg')top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,8 +190,6 @@ footer ul li a:last-child {padding-right: 0;}
 /* ----- ENCABEZADO */
 #encabezado {
     height: 700px;
-    /* max-height: 700px;
-    min-height: 600px; */
 }
 .logo, nav {
     position: fixed;
