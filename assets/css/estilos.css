@@ -126,28 +126,30 @@ footer ul li a:last-child {padding-right: 0;}
 .bkgr-qrs {
     position: absolute;
     background: url('../images/bkgr-qrs@2x.jpg')top center;
-    background-repeat: no-repeat;
-    background-size: 125% auto;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
-    height: 2550px;
+    height: 200%;
+    min-height: 125%;
     z-index: -1;
 }
 
 .internas.qrs {
     background: url('../images/bkgr-beneficios@2x.jpg')top center;
     background-size: 100% auto;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 
 .bkgr-triangulos {
     position: absolute;
-    top: 30px;
+    /* top: 30px; */
     background: url('../images/bkgr-triangulos.svg')top center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     width: 100%;
-    height: 2500px;
+    height: 140%;
     z-index: -1;
 }
 
@@ -183,7 +185,9 @@ footer ul li a:last-child {padding-right: 0;}
 
 /* ----- ENCABEZADO */
 #encabezado {
-    height: 90vh;
+    height: 700px;
+    /* max-height: 700px;
+    min-height: 600px; */
 }
 .logo, nav {
     position: fixed;
@@ -215,6 +219,8 @@ nav {right: 0;}
     }
 #hero {
     height: 90vh;
+    max-height: 700px;
+    min-height: 600px;
     display: grid;
     align-content: center;
     grid-template-columns: 55% 45%;
@@ -236,7 +242,7 @@ nav {right: 0;}
 #hero .imagenes .celular {
     max-width: 500px;
     left:-15%;
-    top: -35px;
+    top: -55px;
 }
 #hero .imagenes .qr {
     max-width: 150px;
@@ -247,7 +253,7 @@ nav {right: 0;}
 /* ----- CONFIANZA */
 #confianza {
     color: white;
-    height: 90vh;
+    height: 630px;
     display: grid;
     grid-template-columns: 45% 55%;
     align-content: center;
@@ -273,8 +279,8 @@ nav {right: 0;}
     flex-flow: column;
     align-content: center;
     text-align: left;
-    padding: 0 16% 0 18%;
-    margin-bottom: -100px;
+    padding: 5% 16% 0 18%;
+    /* margin-bottom: -100px; */
 }
 #confianza .icono-covid {
     width: 60px;
@@ -285,6 +291,8 @@ nav {right: 0;}
 #cambios-ilimitados {
     position: relative;
     height: 100vh;
+    min-height: 750px;
+    max-height: 750px;
     display: grid;
     grid-template-columns: 55% 45%;
     align-content: center;
@@ -340,9 +348,11 @@ nav {right: 0;}
     background-size: cover;
     padding: 7% 0;
     height: 95vh;
+    max-height: 700px;
     display: grid;
     justify-content: center;
     align-items: center;
+    align-content: center;
     grid-template: repeat(1, 25% 25%) / repeat(3, minmax(100px, 300px));
     gap: 170px 10%;
     text-align: center;

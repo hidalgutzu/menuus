@@ -1,22 +1,27 @@
 @media (max-width: 2200px) {
     .bkgr-triangulos {
         top: 30px;
-        background: url('../images/bkgr-triangulos-max.svg')no-repeat top center;
+        background: url('../images/bkgr-triangulos.svg')no-repeat top center;
         background-size: 100% auto;
         height: 2500px;
     }
 
     #confianza .textos {
-        align-content: flex-end;
         padding: 0 4% 0 10%
         margin-bottom: 0px;
+        align-content: flex-end;
     }
 
-    #cambios-ilimitados .textos {
-        color: white;
+    #hero .imagenes .celular {
+        max-width: 530px;
+        top: -10px;
     }
+    #hero .imagenes .qr {left: 325px;}
 
-    #cambios-ilimitados .icono-infinito.hide-negro {display: none;}
+    #confianza .triangulo-2 {
+        max-width: 230px;
+        top: 80%;
+    }
 }
 
 /* // Large devices (desktops, less than 1200px) */
@@ -24,21 +29,18 @@
     .bkgr-qrs {
         position: absolute;
         background: url('../images/bkgr-qrs@2x.jpg')top center;
-        background-repeat: no-repeat;
-        background-size: 135% auto;
+        background-attachment: fixed;
+        background-repeat: repeat-y;
+        background-size: cover;
         width: 100%;
-        height: 3500px;
+        height: 200%;
+        min-height: 125%;
         z-index: -1;
     }
     .bkgr-triangulos {
         top: 30px;
         background: url('../images/bkgr-triangulos.svg')no-repeat top center;
         background-size: 100% auto;
-        height: 2500px;
-    }
-
-    #encabezado, #hero {
-        height: 85vh;
     }
   
     #hero .textos {padding-left: 17%;}
@@ -51,13 +53,13 @@
         height: 40vh;
     }
     #confianza {
-        height: 90vh;
+        height: 550px;
         align-content: center;
     }
     #confianza .textos {
         align-content: center;
-        padding: 5% 6% 0 8%;
-        height: 30vh;
+        padding: 0 6% 20% 8%;
+        /* height: 30vh; */
     }
     #confianza .triangulo-1 {
         width: 70%;
@@ -65,18 +67,13 @@
     }
     #confianza .triangulo-2 {
         max-width: 230px;
-        top: 50%;
+        top: 90%;
     }
-
-    #cambios-ilimitados .icono-infinito.negro {display: inherit;}
-
-    #cambios-ilimitados .icono-infinito.hide-blanco {display: none;}
 
     #cambios-ilimitados {grid-template-columns: 650 40%;}
     #cambios-ilimitados .textos {
         color: black;
         text-align: right;
-        /* padding: 22% 25% 0 9%; */
     }
     #cambios-ilimitados .triangulo-3 {
         top: 25%;
@@ -84,9 +81,20 @@
     }
 
     #beneficios {
-        padding: 9% 4% 7% 2%;
+        padding: 9% 4% 11% 2%;
         gap: 170px 4%;
     }
+ }
+
+ /* Ajuste en fondo rojo */
+ @media (max-width: 1100px) {
+    .bkgr-triangulos {
+        top: 0;
+        background: url('../images/bkgr-triangulos-1100.svg')no-repeat top center;
+        background-size: 100% auto;
+        height: 2500px;
+    }
+    
  }
 
  /* // Medium devices (tablets, less than 992px) */
@@ -96,14 +104,14 @@
         top: 46px;
     }
     .bkgr-triangulos {
-        top: 0;
-        background: url('../images/bkgr-triangulos-991.svg')no-repeat top center;
+        top: 35px;
+        background: url('../images/bkgr-triangulos-991-2.svg')no-repeat top center;
         background-size: 100% auto;
         height: 2500px;
     }
     h1 {font-size: 2.7em;}
-    #encabezado {height: 90vh;}
-    #hero {height: 90vh; align-content: center;}
+    #encabezado {height: 600px;}
+    #hero {height: 100%; align-content: center;}
     #hero .textos {
         padding-left: 14%;
         height: 100%;
@@ -112,16 +120,18 @@
         width: 89%;
         top: -25px;
     }
+    
     #hero .imagenes .qr {
         width: 32%;
         left: 175px;
         bottom: 0;
     }
-    #confianza {height: 80vh; align-content: center;}
+    #confianza {
+        align-content: center;
+    }
     #confianza .textos {
-        align-content: flex-start;
-        padding: 10% 12% 0 5%;
-        height: 80vh;
+        align-content: flex-end;
+        padding: 12% 12% 0 5%;
     }
 
     #confianza .triangulo-1 {
@@ -130,8 +140,8 @@
     }
     #confianza .triangulo-2 {
         max-width: 230px;
-        top: 35%;
-        left: 20%;
+        top: 95%;
+        left: 18%;
     }
 
     #cambios-ilimitados .icono-infinito.blanco {display: inherit;}
@@ -139,15 +149,13 @@
     #cambios-ilimitados {
         height: 90vh;
         align-content: center;
-        background: var(--rojo);
     }
 
     #cambios-ilimitados .icono-infinito.hide-negro {display: none;}
 
     #cambios-ilimitados .textos {
-        color: white;
         text-align: right;
-        padding: 0 20% 0 10%;
+        padding: 30% 20% 0 10%;
     }
     #cambios-ilimitados .triangulo-3 {
         top: 25%;
@@ -156,8 +164,10 @@
     #como-funciona {height: 70vh;}
 
     #beneficios {
-        padding: 9% 4% 0 2%;
-        gap: 170px 4%;
+        min-height: 650px;
+        padding-bottom: 0;
+        padding-top: 0;
+        gap: 16% 4%;
     }
  }
 
@@ -169,27 +179,36 @@
     }
     .bkgr-qrs {
         background: url('../images/bkgr-qrs@2x.jpg')top right;
-        background-repeat: no-repeat;
-        background-size: auto 30%;
-        height: 2500px;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        min-height: 140%;
+        height: 140%;
     }
     .bkgr-triangulos {
         background: url('../images/bkgr-triangulos-864.svg')no-repeat top center;
         background-size: 100% auto;
+        top: 30px;
         height: 2500px;
     }
 
     #confianza .triangulos {height: 20vh;}
     #confianza .textos {
-        align-content: flex-start;
+        align-content: center;
         padding: 0 8% 0 5%;
         margin-top: 0;
-        height: 70vh;
+        height: 100%;
     }
     #confianza .triangulo-2 {
-        top: 130%;
-        left: 15%;
+        top: 190%;
+        left: 10%;
         z-index: 99;
+    }
+
+    #cambios-ilimitados {height: 700px;}
+    #cambios-ilimitados .textos {
+        padding: 20% 20% 0 10%;
     }
 
     #como-funciona {height: 100%;}
@@ -213,16 +232,22 @@
 
  /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
+    h2 {font-size: 2em;}
+    h3 {font-size: 1em;}
+    p {font-size: 0.8em;}
     .nueva-moneda .signo::before, .nuevo-idioma .signo::before {
         left: 10%;
         top: 35px;
     }
     .bkgr-triangulos {
-        top: 35px;
-        background: url('../images/bkgr-triangulos-767.svg')no-repeat top center;
+        background: url('../images/bkgr-triangulos-864.svg')no-repeat top center;
         background-size: 100% auto;
+        top: 40px;
         height: 2500px;
     }
+
+    #encabezado {height: 600px;}
+
     #hero .textos {padding-left: 10%;}
     #hero .imagenes .celular {
         width: 95%;
@@ -238,7 +263,7 @@
     #confianza .textos {
         align-content: flex-start;
         padding: 0 12% 0 0;
-        margin-top: -50px;
+        margin-top: -150px;
     }
     #confianza .triangulo-1 {
         width: 70%;
@@ -251,9 +276,7 @@
         z-index: 99;
     }
     #cambios-ilimitados {
-        background-color: white;
-        align-content: flex-start;
-        height: 80vh;
+        height: 500px;
     }
     #cambios-ilimitados .icono-infinito.hide-blanco {display: none;}
     #cambios-ilimitados .icono-infinito.negro {display: inherit;}
@@ -320,6 +343,13 @@
         max-width: 120px;
         bottom: -117px;
     }
+
+    #beneficios {
+        min-height: 600px;
+        padding-bottom: 0;
+        padding-top: 0;
+        gap: 12%;
+    }
  }
 
   /* // Smallest devices */
@@ -336,7 +366,10 @@
         background: 0;
     } 
 
-    #encabezado {height: 100vh;}
+    #encabezado {
+        height: 100vh;
+        max-height: inherit;
+    }
     
     #encabezado .logo {
         background: none;
@@ -383,7 +416,7 @@
         justify-content: flex-end;
         align-content: flex-start;
         padding: 0 5% 0 25%;
-        margin-top: -170px;
+        margin-top: -100px;
     }
     #confianza .triangulo-1 {
         width: 20%;
@@ -395,7 +428,7 @@
         left: -15px;
     }
     #cambios-ilimitados {
-        height: 100vh;
+        height: 80vh;
         align-content: center;
     }
     #cambios-ilimitados .icono-infinito.negro {display: inherit;margin-left: 0;}
