@@ -127,6 +127,19 @@ ul li a:hover, ol li a:hover {color: var(--morado);}
 
 footer ul li a:last-child {padding-right: 0;}
 
+/* ----- CONFIRMACIÓN */
+.txt_centrado, .txt_centrado h2 {
+    text-align: center !important;
+    width: 100%;
+}
+.pago_exitoso {
+    width: 150px;
+    margin: 6% auto;
+}
+.confirmacion #header-internas.titulo {
+    height: auto !important;
+}
+
 /* ----- FONDOS - BKGR */
 .bkgr-qrs {
     position: absolute;
@@ -469,6 +482,17 @@ footer .redes {
 #header-internas h1 span, #header-internas h1 {line-height: 1.3em;}
 
 /* ----- PLANES */
+.paypal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.paypal img {padding: 0 12px;}
+.paypal-logo, .tarjetas-bancarias {width: auto;}
+.paypal-logo {height: 40px;}
+.tarjetas-bancarias {height: 25px;}
+
 .plan.premium {
     opacity: 0.95;
     background: #FFFFFF;
