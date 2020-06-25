@@ -1,0 +1,728 @@
+.borde {border: 1px solid blue;}
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body {
+    color: black;
+    font-size: 16px;
+    height: 100%;
+}
+
+:root {
+     --dedalo: #D2C29D;
+     --morado: #3F00FF;
+     --rojo: #FF2400;
+     --gris_menuus: #EBEBEB;
+     --gris: rgb(7, 6, 6);
+     --gris_claro: #c3c3c3;
+     --negro30: rgba(0,0,0,0.3);
+     --negro40: rgba(0,0,0,0.4);
+     --negro50: rgba(0,0,0,0.5);
+     --negro60: rgba(0,0,0,0.6);
+     --negro70: rgba(0,0,0,0.7);
+     --blanco50: rgba(255,255,255,0.5);
+     --blanco60: rgba(255,255,255,0.6);
+     --blanco70: rgba(255,255,255,0.7);
+     --blanco80: rgba(255,255,255,0.8);
+     --blanco90: rgba(255,255,255,0.9);
+     --blanco95: rgba(255,255,255,0.95);
+     --trans: all 0.2s ease-in-out;
+}
+
+::selection {
+     background: var(--dedalo);
+     color: black;
+}
+::-moz-selection {
+     background: var(--dedalo);
+     color: black;
+}
+
+.ocultar {display: none;}
+
+ul {
+     list-style: none;
+}
+
+button, input, select, textarea {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0;
+}
+
+/* -------------------------------IDS */
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #000000;
+    letter-spacing: 2px;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+    h1 span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.4em;
+        font-weight: 500;
+        color: #272727;
+        letter-spacing: 0.5px;
+        line-height: 1.2em;
+    }
+h2 {font-size: 2.7em;
+    margin-bottom:22px;
+}
+
+h2, span, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    line-height: 1.1em;
+}
+span, h3 {
+    font-size: 1.3em;
+    padding-bottom: 5px;
+    display: block;
+}
+h4, p, small, footer, #planes ul li, ol li {font-family: 'ABeeZee', sans-serif;}
+small {
+    font-size: 0.7em;
+    letter-spacing: 0.3px;
+}
+h4 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+p, ol li {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    letter-spacing: 0.2px;
+}
+
+ol {margin-left: 23px;}
+
+footer {
+    font-size: 0.7em;
+    letter-spacing: 0.35px;
+    color: var(--negro40);
+    background-color: var(--gris_menuus);
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    grid-auto-flow: column;
+    height: 95px;
+    padding: 0 20px 0 40px;
+}
+footer ul li a {color:var(--negro40);}
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 18px;
+    transition: var(--trans);
+}
+/* ol li a {padding: 10px 4px;} */
+ul li a:hover, ol li a:hover {color: var(--morado);}
+
+footer ul li a:last-child {padding-right: 0;}
+
+/* ----- CONFIRMACIÓN */
+.txt_centrado, .txt_centrado h2 {
+    text-align: center !important;
+    width: 100%;
+}
+.pago_exitoso {
+    width: 150px;
+    margin: 6% auto;
+}
+.confirmacion #header-internas.titulo {
+    height: auto !important;
+}
+
+/* ----- FONDOS - BKGR */
+.bkgr-qrs {
+    position: absolute;
+    background: url('../images/bkgr-qrs@2x.jpg')top center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 200%;
+    min-height: 125%;
+    z-index: -1;
+}
+
+.internas.qrs {
+    background: url('../images/bkgr-beneficios@2x.jpg')top center;
+    background-size: 100% auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.bkgr-triangulos {
+    position: absolute;
+    background: url('../images/bkgr-triangulos.svg')top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 140%;
+    z-index: -1;
+}
+
+.linea-roja {
+    border-top: 7px solid red;
+}
+
+/* ----- BOTONES */
+.boton-primario {
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 0.9em;
+    margin: 0 auto;
+    padding: 18px 32px;
+    letter-spacing: 1px;
+}
+.boton-primario, .boton-planes {
+    background-color: var(--morado);
+    background: radial-gradient(circle, rgba(63,0,255,1) 0%, rgba(63,0,255,1) 100%);
+    color: white;
+    text-decoration: none;
+    transition: var(--trans);
+}
+.boton-primario:hover, .boton-planes:hover {
+    color: white;
+    background: var(--morado);
+    background: radial-gradient(circle, rgba(0,90,255,1) 0%, rgba(63,0,255,1) 100%);
+    transition: var(--trans);
+    box-shadow: 0 16px 22px -7px rgba(0,0,0,0.25);
+}
+
+/* ----- ENCABEZADO */
+#encabezado {
+    height: 700px;
+}
+.logo, nav {
+    position: fixed;
+}
+.logo, nav ul li {background: var(--blanco95);}
+.logo, nav {z-index: 9999;}
+.logo {
+    width: 180px;
+    left: 0;
+    padding: 24px;
+}
+nav {right: 0;}
+    nav ul li {
+        display: inline-block;
+        padding: 26px 0;
+        margin: 0 -4px;
+    }
+    nav ul li a {
+        background: none;
+        font-family: 'ABeeZee', sans-serif;
+        font-size: 15px;
+        letter-spacing: 0.9px;
+        padding: 26px 22px;
+        transition: var(--trans);
+    }
+    nav ul li a:hover {
+        color: var(--rojo);
+        box-shadow: 0 16px 22px -7px rgba(0,0,0,0.2);
+    }
+#hero {
+    height: 90vh;
+    max-height: 700px;
+    min-height: 600px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 55% 45%;
+}
+.span-morado {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--morado);
+    font-size: 1em;
+    display: block;
+}
+#hero .span-morado {padding: 15px 0 30px 0;}
+#hero .span-morado::before {
+    content: "─ ";
+    color: var(--morado);
+}
+#hero .textos {padding-left: 30%;}
+#hero .imagenes {position: relative;}
+#hero .celular, #hero .qr {position: absolute;}
+#hero .imagenes .celular {
+    max-width: 500px;
+    left:-15%;
+    top: -55px;
+}
+#hero .imagenes .qr {
+    max-width: 150px;
+    bottom: -40px;
+    left: 245px;
+}
+
+/* ----- CONFIANZA */
+#confianza {
+    color: white;
+    height: 630px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-content: center;
+}
+#confianza .triangulos {position: relative;height: 50vh;}
+#confianza .triangulo-1, #confianza .triangulo-2 {position: absolute;}
+#confianza .triangulo-1 {
+    width: 100%;
+    max-width: 450px;
+    min-width: 200px;
+    top: -60%;
+    left: -2px;
+}
+#confianza .triangulo-2 {
+    width: 100%;
+    max-width: 300px;
+    min-width: 100px;
+    top: 50%;
+    left: 35%;
+}
+#confianza .textos {
+    display: grid;
+    flex-flow: column;
+    align-content: center;
+    text-align: left;
+    padding: 5% 16% 0 18%;
+    /* margin-bottom: -100px; */
+}
+#confianza .icono-covid {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+/* ----- CAMBIOS ILIMITADOS */
+#cambios-ilimitados {
+    position: relative;
+    height: 100vh;
+    min-height: 750px;
+    max-height: 750px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-content: center;
+}
+#cambios-ilimitados .icono-infinito {
+    margin-right: 0;
+    margin-left: auto;
+}
+#cambios-ilimitados .textos {
+    text-align: right;
+    padding: 10% 24% 0 16%;
+}
+#cambios-ilimitados .triangulo-3 {
+    width: 34%;
+    max-width: 500px;
+    min-width: 200px;
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+/* ----- COMO FUNCIONA */
+#como-funciona, #como-funciona .items {
+    display: grid;
+    justify-content: center;
+}
+#como-funciona {
+    padding: 8%;
+    margin: 0;
+    color: white;
+    align-content: center;
+    text-align: center;
+    /* height: 60vh; */
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.4)100%), url('../images/photo-restaurant-jakub-kapusnak-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#como-funciona .items {
+    grid-template-columns: repeat(3, minmax(250px, 400px));
+    grid-gap: 50px;
+    margin-bottom: 35px;
+}
+#como-funciona h3 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* ----- BENEFICIOS */
+#beneficios {
+    background: url('../images/bkgr-beneficios@2x.jpg')no-repeat top center;
+    background-size: cover;
+    padding: 7% 0;
+    height: 95vh;
+    max-height: 700px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-template: repeat(1, 25% 25%) / repeat(3, minmax(100px, 300px));
+    gap: 170px 10%;
+    text-align: center;
+}
+#beneficios .circulos {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    
+}
+#beneficios .circulo-rojo, #beneficios .isotipo {
+    position: absolute;
+}
+#beneficios .circulo-rojo {width: 100%;}
+#beneficios .isotipo {width: 35%;}
+
+/* ----- FOOTER */
+footer ul, footer ul li, footer .mr {display: flex; align-items: center;}
+footer .links {
+    display: flex;
+    border-top: 1px solid var(--gris_claro);
+    padding-top: 8px;
+}
+footer .mr {margin-right: 10px;}
+footer .mr::before {
+    content: "";
+    background: url('../images/m-gris.svg')no-repeat center center;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+footer .redes {
+    font-size: 1.3em;
+    padding-top: 8px;
+    margin-left: 10px;
+}
+
+/* ----- INTERNAS ---------------------------------------- */
+#white-box {
+    display: grid;
+    justify-content: center;
+    padding: 0 8% 2%;
+}
+#white-box .container {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    max-width: 1000px;
+    padding: 8% 12%;
+}
+#white-box .titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6%;
+}
+#white-box h2 {
+    font-size: 1.9em;
+    margin-bottom: 0;
+}
+#white-box .span-morado {
+    margin-bottom: 2%;
+}
+#white-box .triangulo-whitebox {
+    position: absolute;
+    bottom: 0;
+    max-width: 160px;
+    z-index: 99;
+    bottom: -157px;
+}
+#white-box .triangulo-whitebox.derecho {right: 0;}
+#white-box .triangulo-whitebox.izquierdo, #white-box .triangulito-rojo.izquierdo {left: 0;}
+#white-box .triangulito-rojo.derecho {
+    right: 0;
+    transform: scaleX(-1);
+}
+#white-box .triangulito-rojo {
+    opacity: 0.9;
+    position: absolute;
+    background: url('../images/triangulito-rojo.svg')no-repeat center center;
+    background-size: cover;
+    width: 45px;
+    height: 68px;
+    bottom: 70px;
+    z-index: 99;
+}
+
+.txt_links {
+    color: var(--morado);
+    text-decoration: none;
+}
+.txt_links:hover {
+    text-decoration: none;
+    border-bottom: 3px double var(--morado);
+}
+
+#header-internas {
+    display: grid;
+    height: 265px;
+    text-align: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+#header-internas.titulo {
+    height: 210px;
+    padding-bottom: 0;
+}
+#header-internas .titulo {margin: 40px;}
+#header-internas h1 span, #header-internas h1 {line-height: 1.3em;}
+
+/* ----- PLANES */
+.paypal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.paypal img {padding: 0 12px;}
+.paypal-logo, .tarjetas-bancarias {width: auto;}
+.paypal-logo {height: 40px;}
+.tarjetas-bancarias {height: 25px;}
+
+.plan.premium {
+    opacity: 0.95;
+    background: #FFFFFF;
+    border: 4px solid #3F00FF;
+    box-shadow: 0 21px 30px -3px rgba(63,0,255,0.42);
+}
+
+#planes, #lo-mejor .container, #planes-adicionales, #lo-mejor  {
+    display: grid;
+    justify-content: center;
+}
+#planes {
+    text-align: center;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    margin-top: 4%;
+}
+#planes h2, #planes-adicionales h2 {font-size: 1.9em;}
+#planes h2 {margin: 30px 0 10px 0;}
+
+#planes .premium h2, #planes .premium .precio {color: var(--morado);}
+#planes .precio {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.plan, #planes-adicionales .container, #white-box .container {background-color: var(--blanco95);}
+.plan {
+    min-width: 300px;
+    max-width: 350px;
+    padding: 55px 20px 0;
+}
+
+.precio small {
+    position: absolute; 
+    right: 0; 
+    top: 25px;
+}
+.precio .items {
+    display: flex;
+    justify-content: center;
+}
+.precio .cantidad {
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 0.6em;
+    margin: 0 7px;
+}
+.precio .signo, .precio .mxn {
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+.nueva-moneda, .nuevo-idioma {position: relative;}
+.nueva-moneda .signo::before, .nuevo-idioma .signo::before {
+    position: absolute;
+    left: 20%;
+    top: 46px;
+    content: "";
+    background: url('../images/icono-estrella.svg')no-repeat center center;
+    background-size: contain;
+    width: 28px;
+    height: 15px;
+    display: inline-block;
+}
+
+.plan ul {margin-bottom: 25px;}
+.plan .boton-primario {
+    margin: 25px 0;
+}
+
+#planes .linea {
+    border-bottom: 1px solid #EDEDED;
+}
+#planes ul li {
+    font-size: 0.8em;
+    padding: 7px 0;
+}
+
+/* ----- PLANES ADICIONALES */
+
+/* paypal */
+.cantidadprod {display: none;}
+.nuevo-platillo {position: relative;}
+.nuevo-platillo table {
+    position: absolute;
+    left: 51px;
+    padding-top: 5px;
+}
+
+.ico-adicionales {
+    width: 45px;
+    margin-right: 15px;
+}
+
+#planes-adicionales {
+    margin: 5% 0 8%;
+    width: 100%;
+}
+#planes-adicionales .container {
+    width: 100%;
+    display: grid;
+    flex-flow: column;
+}
+#planes-adicionales .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 0 0;
+}
+#planes-adicionales h2 {margin: 0;}
+
+
+#lo-mejor .beneficios, #planes-adicionales .categorias  {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#planes-adicionales .categorias {
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    margin: 4% 2% 3%;
+}
+#planes-adicionales small {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 40px;
+    color: var(--negro60);
+}
+#planes-adicionales .categorias .item {
+    display: grid;
+    /* width: 300px; */
+    text-align: center;
+    /* padding: 0 20px; */
+    
+    border-right: 1px solid #EDEDED;
+}
+#planes-adicionales .categorias .item:last-child {
+    border-right: none;
+}
+#planes-adicionales .precio {
+    margin: 20px 0;
+}
+
+/* ----- LO MEJOR */
+#lo-mejor {
+    width: 100%;
+    height: auto;
+}
+#lo-mejor h3 {line-height: 1.4em;}
+#lo-mejor .container {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+#lo-mejor .textos {margin: 0 15%;}
+#lo-mejor .beneficios {
+    margin: 5% 8%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 300px));
+}
+
+/* ----- NOSOTROS */
+.bkgr-nosotros {
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+ /* BURGER MENU */
+    /* .logo.zindex {z-index: -1;} */
+    /* .triangulo-1.zindex {z-index: -1;} */
+    .burger-menu.hidebm {
+        z-index: -10;
+        right: 50%;
+        opacity: 0;
+        position: fixed;
+    }
+    .hideoverflow {
+        overflow: hidden !important;
+    }
+    .burger-button {
+        transition: var(--transicion);
+    }
+    .menu-principal.ocultar {display: none;}
+    .burger-menu {
+        position: absolute;
+        background: white;
+        z-index: 9999;
+        height: 100vh;
+        right: 0;
+        width: 0;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .burger-menu.is-active {
+        width: 100vw;
+    }
+    .burger-menu ul {
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding: 8% 0;
+    }
+    .burger-menu ul li a {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid rgba(255,255,255,0.0);
+        transition: var(--trans);
+    }
+    .burger-menu ul li a:hover {
+        color: var(--rojo);
+        border-bottom: 3px solid var(--rojo);
+    }
+    a.boton-cerrar {
+        position: absolute;
+        background: url("../images/close.svg") no-repeat center center;
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        right: 10px;
+        cursor: pointer;
+        margin: 7px 7px 0;
+        z-index: 9999;
+        transition: var(--transicion);
+    }
+    a.boton-cerrar:hover {
+        background: url("../images/close-hover.svg") no-repeat center center;
+        background-size: 3em; 
+    }
+    .boton-cerrar img {
+        width: 50px;
+    }

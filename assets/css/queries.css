@@ -1,0 +1,543 @@
+@media (max-width: 2200px) {
+    .bkgr-triangulos {
+        top: 30px;
+        background: url('../images/bkgr-triangulos.svg')no-repeat top center;
+        background-size: 100% auto;
+        height: 2500px;
+    }
+
+    #confianza .textos {
+        padding: 0 4% 0 10%
+        margin-bottom: 0px;
+        align-content: flex-end;
+    }
+
+    #hero .imagenes .celular {
+        max-width: 530px;
+        top: -10px;
+    }
+    #hero .imagenes .qr {left: 325px;}
+
+    #confianza .triangulo-2 {
+        max-width: 230px;
+        top: 80%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .bkgr-triangulos {
+        top: 30px;
+        background: url('../images/bkgr-triangulos-xl.svg')no-repeat top center;
+        background-size: 100% auto;
+        height: 2500px;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .bkgr-qrs {
+        position: absolute;
+        background: url('../images/bkgr-qrs@2x.jpg')top center;
+        background-attachment: fixed;
+        background-repeat: repeat-y;
+        background-size: cover;
+        width: 100%;
+        height: 1500px;
+        min-height: 125%;
+        z-index: -1;
+    }
+    .bkgr-triangulos {
+        top: 30px;
+        background: url('../images/bkgr-triangulos.svg')no-repeat top center;
+        background-size: 100% auto;
+    }
+  
+    #hero .textos {padding-left: 17%;}
+    #hero .imagenes .celular {
+        max-width: 450px;
+        top: -55px;
+    }
+    #hero .imagenes .qr {left: 225px;}
+    #confianza .triangulos {
+        height: 40vh;
+    }
+    #confianza {
+        height: 550px;
+        align-content: center;
+    }
+    #confianza .textos {
+        align-content: center;
+        padding: 0 6% 20% 8%;
+        /* height: 30vh; */
+    }
+    #confianza .triangulo-1 {
+        width: 70%;
+        top: -60%;
+    }
+    #confianza .triangulo-2 {
+        max-width: 230px;
+        top: 90%;
+    }
+
+    #cambios-ilimitados {grid-template-columns: 650 40%;}
+    #cambios-ilimitados .textos {
+        color: black;
+        text-align: right;
+    }
+    #cambios-ilimitados .triangulo-3 {
+        top: 25%;
+        width: 32%;
+    }
+
+    #beneficios {
+        padding: 9% 4% 11% 2%;
+        gap: 170px 4%;
+    }
+ }
+
+ /* Ajuste en fondo rojo */
+ @media (max-width: 1100px) {
+    .bkgr-triangulos {
+        top: 0;
+        background: url('../images/bkgr-triangulos-1100.svg')no-repeat top center;
+        background-size: 100% auto;
+        height: 2500px;
+    }
+    
+ }
+
+ /* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .nueva-moneda .signo::before, .nuevo-idioma .signo::before {
+        left: 18%;
+        top: 46px;
+    }
+    .bkgr-triangulos {
+        top: 35px;
+        background: url('../images/bkgr-triangulos-991-2.svg')no-repeat top center;
+        background-size: 100% auto;
+        height: 2500px;
+    }
+    h1 {font-size: 2.7em;}
+    #encabezado {height: 600px;}
+    #hero {height: 100%; align-content: center;}
+    #hero .textos {
+        padding-left: 14%;
+        height: 100%;
+    }
+    #hero .imagenes .celular {
+        width: 89%;
+        top: -25px;
+    }
+    
+    #hero .imagenes .qr {
+        width: 32%;
+        left: 175px;
+        bottom: 0;
+    }
+    #confianza {
+        align-content: center;
+    }
+    #confianza .textos {
+        align-content: flex-end;
+        padding: 12% 12% 0 5%;
+    }
+
+    #confianza .triangulo-1 {
+        width: 70%;
+        top: -40%;
+    }
+    #confianza .triangulo-2 {
+        max-width: 230px;
+        top: 95%;
+        left: 18%;
+    }
+
+    #cambios-ilimitados .icono-infinito.blanco {display: inherit;}
+
+    #cambios-ilimitados {
+        height: 90vh;
+        align-content: center;
+    }
+
+    #cambios-ilimitados .icono-infinito.hide-negro {display: none;}
+
+    #cambios-ilimitados .textos {
+        text-align: right;
+        /* padding: 30% 20% 0 10%; */
+        padding: 30% 12% 0 10%;
+        
+    }
+    #cambios-ilimitados .triangulo-3 {
+        top: 25%;
+        width: 33%;
+    }
+    #como-funciona {height: 70vh;}
+
+    #beneficios {
+        min-height: 650px;
+        padding-bottom: 0;
+        padding-top: 0;
+        gap: 16% 4%;
+    }
+ }
+
+/* // Small devices (landscape phones, less than 864px) */
+@media (max-width: 864px) { 
+    .nueva-moneda .signo::before, .nuevo-idioma .signo::before {
+        left: 14%;
+        top: 46px;
+    }
+    .bkgr-qrs {
+        background: url('../images/bkgr-qrs@2x.jpg')top right;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        min-height: 140%;
+        height: 1500px;
+    }
+    .bkgr-triangulos {
+        background: url('../images/bkgr-triangulos-864.svg')no-repeat top center;
+        background-size: 100% auto;
+        top: 30px;
+        height: 2500px;
+    }
+
+    #confianza .triangulos {height: 20vh;}
+    #confianza .textos {
+        align-content: center;
+        padding: 0 8% 0 5%;
+        margin-top: 0;
+        height: 100%;
+    }
+    #confianza .triangulo-2 {
+        top: 190%;
+        left: 10%;
+        z-index: 99;
+    }
+
+    #cambios-ilimitados {height: 700px;}
+    #cambios-ilimitados .textos {
+        padding: 20% 20% 0 10%;
+    }
+
+    #como-funciona {height: 100%;}
+    #como-funciona .items {
+        justify-content: center;
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto auto;
+        grid-auto-flow: column;
+        grid-gap: 40px;
+        margin-bottom: 45px;
+    }
+    #hero .imagenes .qr {
+        width: 35%;
+        left: 165px;
+        top: 80px
+    }
+    #white-box {
+        padding: 0 8% 7%;
+    }
+ }
+
+ /* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    h2 {font-size: 2em;}
+    h3 {font-size: 1em;}
+    p, ol li {font-size: 0.8em;}
+    .nueva-moneda .signo::before, .nuevo-idioma .signo::before {
+        left: 10%;
+        top: 35px;
+    }
+    .bkgr-triangulos {
+        background: url('../images/bkgr-triangulos-864.svg')no-repeat top center;
+        background-size: 100% auto;
+        top: 40px;
+        height: 2500px;
+    }
+
+    #encabezado {height: 600px;}
+
+    #hero .textos {padding-left: 10%;}
+    #hero .imagenes .celular {
+        width: 95%;
+        top: 0;
+    }
+    #hero .imagenes .qr {
+        left: 130px;
+        top: 100px;
+    }
+    #confianza {
+        grid-template-columns: 40% 60%;
+    }
+    #confianza .textos {
+        align-content: flex-start;
+        padding: 0 12% 0 0;
+        margin-top: -150px;
+    }
+    #confianza .triangulo-1 {
+        width: 70%;
+        top: -70%;
+    }
+    #confianza .triangulo-2 {
+        max-width: 170px;
+        top: 125%;
+        left: 2%;
+        z-index: 99;
+    }
+    #cambios-ilimitados {
+        height: 500px;
+    }
+    #cambios-ilimitados .icono-infinito.hide-blanco {display: none;}
+    #cambios-ilimitados .icono-infinito.negro {display: inherit;}
+    #cambios-ilimitados .textos {
+        color: black;
+        /* padding: 5% 15% 0 10%; */
+        padding: 5% 8% 0 10%;
+    }
+    #cambios-ilimitados .triangulo-3 {
+        top: 10%;
+        width: 36%;
+    }
+
+    #como-funciona {height: 100%;}
+    #como-funciona .items {
+        grid-template-columns: 85%;
+    }
+
+    #planes {grid-auto-flow: row;}
+    .plan {width: 600px;}
+
+    .ico-adicionales {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nuevo-platillo table {
+        position: relative;
+        left: 0;
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #planes-adicionales .container {padding: 0 25px;}
+    #planes-adicionales .categorias {
+        grid-auto-flow: row;
+        grid-template: auto auto 1fr / 1fr;
+        grid-gap: 30px;
+    }
+    #planes-adicionales .categorias .item {border-right: 0;}
+    #planes-adicionales .precio {
+        margin: 10px 0;
+    }
+    #planes-adicionales small {padding-top: 20px;}
+    #planes-adicionales .titulo {
+        padding-bottom: 15px;
+        flex-flow: column;
+    }
+    #planes h2, #planes-adicionales h2 {font-size: 1.5em;}
+
+    #lo-mejor .container {margin-bottom: 20px;}
+    #lo-mejor .beneficios {
+        margin: 5% 8%;
+        grid-auto-flow: row;
+        grid-template: 1fr / 1fr 1fr;
+        grid-gap: 30px;
+    }
+    #lo-mejor .textos {margin: 10% 10% 0;}
+
+    #white-box {
+        padding: 0 8% 4%;
+    }
+    #white-box .triangulo-whitebox {
+        max-width: 120px;
+        bottom: -117px;
+    }
+
+    #beneficios {
+        min-height: 600px;
+        padding-bottom: 0;
+        padding-top: 0;
+        gap: 12%;
+    }
+ }
+
+  /* // Smallest devices */
+ @media (max-width: 575.98px) { 
+
+    h1 {font-size: 2.2em;}
+    h1 span {font-size: 0.8rem;}
+
+    .bkgr-qrs {
+        background: url('../images/bkgr-qrs@2x.jpg')top right;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        min-height: 140%;
+        height: 1000px;
+    }
+
+    .bkgr-triangulos {
+        top: 35px;
+        background: url('../images/bkgr-triangulos-575.svg')no-repeat top center;
+        background-size: 100% auto;
+        height: 2500px;
+    }
+
+    .logo {
+        position: absolute;
+        background: 0;
+    } 
+
+    #encabezado {
+        height: 100vh;
+        max-height: inherit;
+    }
+    
+    #encabezado .logo {
+        background: none;
+        position: absolute;
+    } 
+    #hero h1 span, #hero .span-morado {padding: 0 20px;}
+    #hero {
+        text-align: center;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 15%;
+        justify-items: center;
+        align-items: center;
+    }
+    #hero .textos {
+        padding-left: 0;
+        margin-top:-40px;
+    }
+    #hero .span-morado::after {
+        content: " ─";
+        color: var(--morado);
+    }
+    #hero .imagenes .celular {
+        position: relative;
+        width: 70%;
+        left: 20px;
+        margin-top: 35px;
+    }
+    #hero .imagenes .qr {
+        max-width: 100px;
+        left: 60px;
+        top: 100px;
+    }
+    #hero .boton-primario {margin-top: 20px;}
+
+    #confianza {
+        background: var(--rojo);
+        height: 100vh;
+        grid-template-columns: 1fr;
+    }
+    #confianza .icono-covid {
+        display: flex;
+        justify-self: flex-end;
+    }
+    #confianza .textos {
+        text-align: right;
+        justify-content: flex-end;
+        align-content: flex-start;
+        padding: 0 5% 0 25%;
+        margin-top: -100px;
+    }
+    #confianza .triangulo-1 {
+        width: 20%;
+        top: -160%;
+    }
+    #confianza .triangulo-2 {
+        max-width: 140px;
+        top: 60%;
+        left: -15px;
+    }
+    #cambios-ilimitados {
+        height: 70vh;
+        grid-template-columns: 60% 40%;
+        align-content: center;
+    }
+    #cambios-ilimitados .icono-infinito.negro {display: inherit;margin-left: 0;}
+    #cambios-ilimitados .textos {
+        text-align: left;
+        padding: 0 0 0 7%;
+    }
+    #cambios-ilimitados .triangulo-3 {
+        top: 8%;
+        width: 100%;
+        max-width: 45%;
+        min-width: 25px;
+    }
+
+    #como-funciona {
+        height: 100%;
+        padding: 12% 8%;
+        margin-bottom: 0;
+    }
+
+    #beneficios {
+        background: url('../images/bkgr-beneficios@2x.jpg')no-repeat top center;
+        background-size: cover;
+        padding: 11% 5%;
+        height: 100%;
+        grid-template: 1fr 1fr / 50% 50%;
+        gap: 50px 5%;
+        text-align: center;
+        align-content: space-evenly;
+    }
+    #beneficios div:nth-last-child(1) {
+        width: 90vw;
+        display: grid;
+        justify-items: center;
+        padding: 0 40%;
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+    }
+    #beneficios .circulos {display: none;}
+
+    footer {
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        height: auto;
+        padding: 0px 20px;
+    }
+    footer ul li a {padding: 10px;}
+    footer .links, footer .redes {position: relative;}
+    footer .links {padding-top: 20px;}
+    footer .redes {
+        font-size: 2.3em;
+        margin: 0 auto;
+        padding-bottom: 30px;
+   }
+
+   .plan {width: 300px;}
+
+   #white-box .triangulo-whitebox {
+    display: none;
+    }
+    #white-box .triangulito-rojo {
+        bottom: -40px;
+    }
+    #white-box h2 {
+        font-size: 1.3em;
+        margin-left: 7px;
+    }
+    #white-box .titulo {
+        align-items: flex-start;
+    }
+
+    .ico-adicionales {
+        width: 30px;
+    }
+
+    /* ----- CONFIRMACIÓN */
+    .pago_exitoso {
+        margin: 17% auto 6% auto;
+    }
+
+ }

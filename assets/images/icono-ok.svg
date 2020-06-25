@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <defs>
+    <filter id="icono-ok-a">
+      <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="31" cy="31" r="31" fill="#3F00FF"/>
+    <g filter="url(#icono-ok-a)" transform="translate(17 19)">
+      <polygon points="0 0 28 0 28 28 0 28"/>
+      <path fill="#000" fill-rule="nonzero" d="M23.065,5.86833333 L24.6983333,7.50166667 L9.835,22.365 L3.30166667,15.8316667 L4.935,14.1983333 L9.835,19.0983333 L23.065,5.86833333 M23.065,2.56666667 L9.835,15.7966667 L4.935,10.8966667 L0,15.8316667 L9.835,25.6666667 L28,7.50166667 L23.065,2.56666667 Z"/>
+    </g>
+  </g>
+</svg>
