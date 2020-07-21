@@ -421,6 +421,7 @@ footer .redes {
     justify-content: center;
     max-width: 1000px;
     padding: 8% 12%;
+    width: 100vw;
 }
 #white-box .titulo {
     display: flex;
