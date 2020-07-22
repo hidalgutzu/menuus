@@ -1,0 +1,23 @@
+{
+  "name": "menuus",
+  "version": "1.0.0",
+  "description": "Menuuus Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "gcloud app deploy app.yaml --project menuus-site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlopezlira/menuus.git"
+  },
+  "keywords": [
+    "html",
+    "menuus"
+  ],
+  "author": "@hidalgutzu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlopezlira/menuus/issues"
+  },
+  "homepage": "https://github.com/jlopezlira/menuus#readme"
+}
