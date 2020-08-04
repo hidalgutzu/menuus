@@ -491,6 +491,13 @@ footer .redes {
 #header-internas .titulo {margin: 40px;}
 #header-internas h1 span, #header-internas h1 {line-height: 1.3em;}
 
+/* ----- REGISTRO */
+#registro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 /* ----- PLANES */
 .paypal {
     display: flex;
@@ -533,7 +540,8 @@ footer .redes {
 .plan, #planes-adicionales .container, #white-box .container {background-color: var(--blanco95);}
 .plan {
     min-width: 300px;
-    max-width: 350px;
+    max-width: 650px;
+    width: 100%;
     padding: 55px 20px 0;
 }
 
