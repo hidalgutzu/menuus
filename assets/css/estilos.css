@@ -127,6 +127,10 @@ ul li a:hover, ol li a:hover {color: var(--morado);}
 
 footer ul li a:last-child {padding-right: 0;}
 
+.hide-on-desktop {
+    display: none;
+}
+
 /* ----- CONFIRMACIÓN */
 .txt_centrado, .txt_centrado h2 {
     text-align: center !important;
@@ -253,7 +257,7 @@ nav {right: 0;}
 }
 #hero .textos {padding-left: 30%;}
 #hero .imagenes {position: relative;}
-#hero .celular, #hero .qr {position: absolute;}
+#hero .celular, #hero .qr, #hero .whatsapp {position: absolute;}
 #hero .imagenes .celular {
     max-width: 500px;
     left:-15%;
@@ -263,6 +267,11 @@ nav {right: 0;}
     max-width: 150px;
     bottom: -40px;
     left: 245px;
+}
+#hero .imagenes .whatsapp {
+    max-width: 150px;
+    top: -50px;
+    left: 40px;
 }
 
 /* ----- CONFIANZA */
